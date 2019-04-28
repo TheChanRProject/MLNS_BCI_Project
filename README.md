@@ -45,7 +45,8 @@ Merged DevAttentionX data and Merged DevAttentionY data available on the Google 
 - Relevance Vector Machine
 - Random Forest Feature Importance
 - Naive Bayes Feature Importance
-- Recursive Feature Elimination with Logistic Regression 
+- Recursive Feature Elimination with Logistic Regression
+- Stepwise Regression 
 
 ### Part 4: Putting it together in a paper
 
