@@ -18,7 +18,7 @@ Merged DevAttentionX data and Merged DevAttentionY data available on the Google 
     2. Visualize Best Tree Estimator
     3. Hyper-parameter Tuning of Random Forest
     4. Plot Feature Importance
-    5. Compare with Gini Criterion 
+    5. Compare with Gini Criterion
 - Logistic Regression
   - Results (Non-RFC Logistic Regression with No Penalty)
     1. Accuracy: 81.84%
@@ -45,6 +45,7 @@ Merged DevAttentionX data and Merged DevAttentionY data available on the Google 
 - Relevance Vector Machine
 - Random Forest Feature Importance
 - Naive Bayes Feature Importance
+- Recursive Feature Elimination with Logistic Regression 
 
 ### Part 4: Putting it together in a paper
 
