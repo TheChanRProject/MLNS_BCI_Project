@@ -45,5 +45,5 @@ TestPred2 = LDAFit.predict(XTest)
 from jupyterthemes import jtplot
 jtplot.style(theme='monokai')
 plot_roc(YTest,TestPred,title = 'LDA')
-plot_confusion_matrix(YTest,TestPred2)
+plot_confusion_matrix(YTest,TestPred2, title='LDA Confusion Matrix')
 print(accuracy_score(YTest, TestPred2))
