@@ -46,7 +46,7 @@ Please look at src/ml_experiments/logistic-regression/rishov-logistic-regression
 
 ### Part 3: Finding Out the Most Important Features
 
-- Relevance Vector Machine
+- Relevance Vector Machine [If Time Available]
 - Random Forest Feature Importance
 - Naive Bayes Feature Importance
 - Recursive Feature Elimination with Logistic Regression
