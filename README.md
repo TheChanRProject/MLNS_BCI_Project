@@ -22,7 +22,7 @@ Final Project for Machine Learning with Neural Signals.
   - Results (With Least Squares Shrinkage Parameter)
     1. Accuracy: 81.4%
     2. ROC Curve: ![](images/lda/shrinked-lda-roc-curve.png)
-    3. Confusion Matrix: ![](images/lda/lda-confusion-matrix.png) 
+    3. Confusion Matrix: ![](images/lda/lda-confusion-matrix.png)
 - Neural Network
 - Naive Bayes
 
@@ -34,7 +34,8 @@ Final Project for Machine Learning with Neural Signals.
 ### Part 3: Finding Out the Most Important Features
 
 - Relevance Vector Machine
-- XGBoost
+- Random Forest Feature Importance
+- Naive Bayes Feature Importance 
 
 ### Part 4: Putting it together in a paper
 
