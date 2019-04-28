@@ -43,6 +43,7 @@ LDAFit = LDAMod.fit(XTrain2,YTrain2)
 TestPred = LDAFit.predict_proba(XTest)
 TestPred2 = LDAFit.predict(XTest)
 from jupyterthemes import jtplot
+jtplot.style(theme='monokai')
 plot_roc(YTest,TestPred,title = 'LDA')
 plot_confusion_matrix(YTest,TestPred2)
 print(accuracy_score(YTest, TestPred2))
