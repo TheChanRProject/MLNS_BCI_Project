@@ -20,7 +20,7 @@ Merged DevAttentionX data and Merged DevAttentionY data available on the Google 
     4. Plot Feature Importance
     5. Compare with Gini Criterion
 - Logistic Regression
-  - Results (Non-RFC Logistic Regression with No Penalty)
+  - Results (Non-RFE Logistic Regression with No Penalty)
     1. Accuracy: 81.84%
     2. ROC Curve: ![](images/logistic-regression/logistic-regression-roc-curve.png)
     3. Confusion Matrix: ![](images/logistic-regression/logistic-regression-confusion-matrix.png)
@@ -40,7 +40,7 @@ Merged DevAttentionX data and Merged DevAttentionY data available on the Google 
 - Neural Network
 - Logistic Regression with Softmax
 - Random Forest
-- Naive Bayes 
+- Naive Bayes
 
 ### Part 3: Finding Out the Most Important Features
 
