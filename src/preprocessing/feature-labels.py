@@ -14,6 +14,6 @@ print(len(df))
 print(df.shape)
 column_dict = {j:f"Feature_{i+1}" for i,j in enumerate(df)}
 print(column_dict)
-df.rename(columns=column_dict)
+df.rename(columns=column_dict, inplace=True)
 
 df.to_csv("data/Merged/merged_DevAttentionX.csv")
