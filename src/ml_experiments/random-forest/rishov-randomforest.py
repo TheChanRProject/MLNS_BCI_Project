@@ -31,13 +31,15 @@ Xtrain, Xtest, Ytrain, Ytest = train_test_split(ZFeatures, ClassValuesExp, test_
 # Create the validation sets
 Xtrain2, XVal, Ytrain2, YVal = train_test_split(Xtrain, Ytrain, test_size=0.2, random_state=100)
 
-# Building the Random Forest 
+# Building the Random Forest
 
 model = RandomForestClassifier(n_estimators=1000, criterion="entropy")
 model_fit = model.fit(Xtrain2, Ytrain2)
 test_pred = model_fit.predict(Xtest)
 test_pred_prob = model_fit.predict_proba(Xtest)
 print(accuracy_score(Ytest, test_pred))
+
+# Plotting the ROC Curve and Confusion Matrix 
 
 from jupyterthemes import jtplot
 
