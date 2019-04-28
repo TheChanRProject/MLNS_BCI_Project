@@ -8,7 +8,8 @@ from sklearn.metrics import accuracy_score
 from scikitplot.metrics import plot_roc, plot_confusion_matrix
 from warnings import filterwarnings
 filterwarnings("ignore")
-from jupyterthemes import jtplot 
+from jupyterthemes import jtplot
+jtplot.style(theme='monokai')
 
 # Preprocessing and Mapping Feature Labels
 
