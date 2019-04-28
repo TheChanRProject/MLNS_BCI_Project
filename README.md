@@ -14,9 +14,8 @@ Final Project for Machine Learning with Neural Signals.
   - To Do
     1. Implement Cross Validation to Select Best Tree Estimator
     2. Visualize Best Tree Estimator
-    3. Redo labels in Neural Features based on Paper
-    4. Hyperparameter Tuning of Random Forest
-    5. Plot Feature Importance
+    3. Hyper-parameter Tuning of Random Forest
+    4. Plot Feature Importance
 - Logistic Regression
 - Linear Discriminant Analysis
   - Results (With Least Squares Shrinkage Parameter)
@@ -35,7 +34,7 @@ Final Project for Machine Learning with Neural Signals.
 
 - Relevance Vector Machine
 - Random Forest Feature Importance
-- Naive Bayes Feature Importance 
+- Naive Bayes Feature Importance
 
 ### Part 4: Putting it together in a paper
 
