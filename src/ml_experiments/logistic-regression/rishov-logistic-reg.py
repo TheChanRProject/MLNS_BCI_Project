@@ -18,3 +18,6 @@ ClassValues = pd.read_csv("data/Merged/merged_DevAttentionY.csv")
 ClassValues.drop(list(ClassValues.columns)[0], axis=1, inplace=True)
 ClassValues.rename(columns={'2':'Attended/Unattended'}, inplace=True)
 ClassValues.head()
+
+NeurFeatExp = NeurFeats.loc[0:119999]
+ClassValuesExp = ClassValues.loc[0:119999]
