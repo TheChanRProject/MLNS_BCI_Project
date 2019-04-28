@@ -8,3 +8,5 @@ def find_csv_filenames( path_to_dir, suffix=".csv" ):
 devY = find_csv_filenames('data/DevAttY', suffix=".csv")
 
 df = pd.concat([pd.read_csv(f"data/DevAttY/{i}") for i in devY])
+
+print(len(df)) 
