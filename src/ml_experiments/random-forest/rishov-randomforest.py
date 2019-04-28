@@ -19,6 +19,8 @@ ClassValues = pd.read_csv("data/Merged/merged_DevAttentionY.csv")
 ClassValues.drop(list(ClassValues.columns)[0], axis=1, inplace=True)
 print(ClassValues.shape)
 
+# Getting the first 120000 records for both datasets 
+
 NeurFeatExp = NeurFeat.loc[0:119999]
 ClassValuesExp = ClassValues.loc[0:119999]
 
