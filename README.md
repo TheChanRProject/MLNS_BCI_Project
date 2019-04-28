@@ -6,6 +6,15 @@ Final Project for Machine Learning with Neural Signals.
 ### Part 1: Binary Classification for Unattended versus Attended
 
 - Random Forest
+  - Results (Untuned Random Forest with Entropy)
+    1. Accuracy: 99.1%
+    2. ROC Curve: ![](images/random-forest/untuned-rf-roc-curve.png)
+    3. Confusion Matrix: ![](images/random-forest/untuned-rf-confusion-matrix.png)
+    4. Estimator Used to Train Random Forest Visualization: ![](images/untuned-random-forest-estimator.png)  
+  - To Do
+    1. Implement Cross Validation to Select Best Tree Estimator
+    2. Visualize Best Tree Estimator
+    3. Redo labels in Neural Features based on Paper 
 - Logistic Regression
 - LDA
 - Neural Network
