@@ -50,7 +50,7 @@ Please look at src/ml_experiments/logistic-regression/rishov-logistic-regression
 - Random Forest Feature Importance
 - Naive Bayes Feature Importance
 - Recursive Feature Elimination with Logistic Regression
-- Stepwise Regression
+- Stepwise Regression [If Time Available]
 
 ### Part 4: Putting it together in a paper
 
