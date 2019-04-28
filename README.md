@@ -71,6 +71,7 @@ Tutorials to look at:
 Tutorials to look at:
 
 - [Susan Li: Building a Logistic Regression in Python](https://towardsdatascience.com/building-a-logistic-regression-in-python-step-by-step-becd4d56c9c8)
+- [William Cohen: Logistic Regression with Stochastic Gradient Descent](http://www.cs.cmu.edu/~wcohen/10-605/sgd-part2.pdf)
 
 3. Build a Naive Bayes model
 
