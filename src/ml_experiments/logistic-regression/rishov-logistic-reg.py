@@ -47,3 +47,4 @@ test_pred_prob = model_fit.predict_proba(Xtest)
 # Accuracy Score and Plotting ROC Curve and Confusion Matrix
 print(f"Accuracy of model is: {round(accuracy_score(Ytest, test_pred)*100, 2)}%")
 plot_roc(Ytest, test_pred_prob, title="Logistic Regression ROC")
+plot_confusion_matrix(Ytest, test_pred, title="Logistic Regression Confusion Matrix") 
