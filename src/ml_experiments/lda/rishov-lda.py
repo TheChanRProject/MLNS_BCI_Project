@@ -8,7 +8,8 @@ import pandas as pd
 from warnings import filterwarnings
 filterwarnings("ignore")
 
-# *
+# Preprocessing datasets
+
 ClassValues = pd.read_csv('data/Merged/merged_DevAttentionY.csv')
 NeurFeat = pd.read_csv('data/Merged/merged_DevAttentionX.csv')
 
@@ -18,6 +19,8 @@ NeurFeat.head()
 ClassValues.drop(list(ClassValues.columns)[0], axis=1, inplace=True)
 ClassValues.head()
 
+# Getting the first 120000 samples
+
 NeurFeatExp = NeurFeat.loc[0:119999]
 ClassValuesExp = ClassValues.loc[0:119999]
 # Split into Train and Validation and Test Sets
@@ -25,6 +28,9 @@ ClassValuesExp = ClassValues.loc[0:119999]
 ZNeurFeat = scale(NeurFeatExp,axis=0)
 print(len(ZNeurFeat))
 print(len(ClassValuesExp))
+
+#  Splitting into training and testing sets 
+
 XTrain, XTest, YTrain, YTest = train_test_split(ZNeurFeat,ClassValuesExp,test_size = 0.2,random_state = 100)
 print(f"The shape of XTrain is {XTrain.shape}")
 print(f"The shape of YTrain is {YTrain.shape}")
