@@ -54,6 +54,10 @@ Please look at src/ml_experiments/logistic-regression/rishov-logistic-regression
 
 ### Part 4: Putting it together in a paper
 
+Resources:
+
+[Classification of EEG data using machine learning techniques](http://lup.lub.lu.se/luur/download?func=downloadFile&recordOId=8895013&fileOId=8895015)
+
 ### Part 5: Building the poster
 
 
