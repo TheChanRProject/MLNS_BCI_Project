@@ -50,4 +50,10 @@ from sklearn.tree import export_graphviz
 import pydot
 
 # Visualizing a single tree estimator
-tree = model.
+tree = model.estimators_[5]
+
+# Export image
+export_graphviz(tree, out_file="images/untuned-random-forest-estimator.dot", feature_names=list(NeurFeatExp.columns), rounded=True, precision=1)
+
+# Use dot file to create a graph
+(graph, ) = pydot.graph_from_dot_file('images/untuned-random-forest-estimator.dot')
