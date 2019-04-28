@@ -31,10 +31,11 @@ print(f"The shape of YTrain is {YTrain.shape}")
 print(f"The shape of XTest is {XTest.shape}")
 print(f"The shape of YTest is {YTest.shape}")
 # Split Train Set into Train and Validation Sets
-XTrain2, XVal, YTrain2, YVal = train_test_split(
-        XTrain,YTrain,test_size = 0.2,
-        random_state = 100)
-
+XTrain2, XVal, YTrain2, YVal = train_test_split(XTrain,YTrain,test_size = 0.2,random_state = 100)
+print(f"The shape of XTrain is {XTrain2.shape}")
+print(f"The shape of YTrain is {YTrain2.shape}")
+print(f"The shape of XTest is {XVal.shape}")
+print(f"The shape of YTest is {YVal.shape}")
 # *
 # Recover Classes Using Least Squares Linear Discriminant Analysis
 LDAMod = LinearDiscriminantAnalysis(solver = 'lsqr', shrinkage='auto')
