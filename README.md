@@ -5,6 +5,8 @@ Final Project for Machine Learning with Neural Signals.
 
 ### Part 1: Binary Classification for Unattended versus Attended
 
+Merged DevAttentionX data and Merged DevAttentionY data available on the Google Drive. 
+
 - Random Forest
   - Results (Untuned Random Forest with Entropy)
     1. Accuracy: 99.1%
