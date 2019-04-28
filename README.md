@@ -5,7 +5,7 @@ Final Project for Machine Learning with Neural Signals.
 
 ### Part 1: Binary Classification for Unattended versus Attended
 
-Merged DevAttentionX data and Merged DevAttentionY data available on the Google Drive. 
+Merged DevAttentionX data and Merged DevAttentionY data available on the Google Drive.
 
 - Random Forest
   - Results (Untuned Random Forest with Entropy)
@@ -19,6 +19,9 @@ Merged DevAttentionX data and Merged DevAttentionY data available on the Google 
     3. Hyper-parameter Tuning of Random Forest
     4. Plot Feature Importance
 - Logistic Regression
+  - Results (Non-RFC Logistic Regression with No Penalty)
+    1. Accuracy: 81.84%
+    2. ROC Curve: ![](images/logistic-regression/logistic-regression-roc-curve.png)
 - Linear Discriminant Analysis
   - Results (With Least Squares Shrinkage Parameter)
     1. Accuracy: 81.4%
