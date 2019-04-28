@@ -22,6 +22,7 @@ Merged DevAttentionX data and Merged DevAttentionY data available on the Google 
   - Results (Non-RFC Logistic Regression with No Penalty)
     1. Accuracy: 81.84%
     2. ROC Curve: ![](images/logistic-regression/logistic-regression-roc-curve.png)
+    3. Confusion Matrix: ![](images/logistic-regression/logistic-regression-confusion-matrix.png)
 - Linear Discriminant Analysis
   - Results (With Least Squares Shrinkage Parameter)
     1. Accuracy: 81.4%
