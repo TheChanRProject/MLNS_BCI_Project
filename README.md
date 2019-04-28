@@ -1,6 +1,30 @@
 # MLNS_BCI_Project
 Final Project for Machine Learning with Neural Signals.
 
+## 3 Parts
+
+### Part 1: Binary Classification for Unattended versus Attended
+
+- Random Forest
+- Logistic Regression
+- LDA
+- Neural Network
+- Naive Bayes
+
+### Part 2: Multi-Class Classification for Unattended versus Attended Including Instruments
+- Multiclass LDA
+- Neural Network
+- Logistic Regression with Softmax
+
+### Part 3: Finding Out the Most Important Features
+
+- Relevance Vector Machine
+- XGBoost
+
+### Part 4: Putting it together in a paper
+
+### Part 5: Building the poster
+
 
 # Tasks:
 
@@ -22,4 +46,11 @@ Tutorials to look at:
 Tutorials to look at:
 
 - [Gaurav Chauhan: All About Naive Bayes](https://towardsdatascience.com/all-about-naive-bayes-8e13cef044cf)
-- [Naive Bayes with Scikit-Learn](https://github.com/2796gaurav/Naive-bayes-explained/blob/master/Naive%20bayes/Naive%20Bayes%20in%20scikit%20learn.ipynb) 
+- [Naive Bayes with Scikit-Learn](https://github.com/2796gaurav/Naive-bayes-explained/blob/master/Naive%20bayes/Naive%20Bayes%20in%20scikit%20learn.ipynb)
+
+4. Build a Neural Network
+
+Tutorials to look at:
+
+- [Neural Networks and Backprop in Scikitlearn](https://www.youtube.com/watch?v=X8SPO875mQY)
+- [GitHub for the Above Video](https://github.com/shreyans29/thesemicolon/blob/master/Neural%20Networks%20and%20BackPropogation.ipynb)
