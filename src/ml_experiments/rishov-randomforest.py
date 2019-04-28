@@ -10,12 +10,12 @@ from warnings import filterwarnings
 filterwarnings("ignore")
 
 # X File Read in Pandas
-NeurFeat = pd.read_csv("../data/Merged/merged_DevAttentionX.csv")
+NeurFeat = pd.read_csv("data/Merged/merged_DevAttentionX.csv")
 NeurFeat.drop(list(NeurFeat.columns)[0], axis=1, inplace=True)
 print(NeurFeat.shape)
 
 # Y File Read in Pandas
-ClassValues = pd.read_csv("../data/Merged/merged_DevAttentionY.csv")
+ClassValues = pd.read_csv("data/Merged/merged_DevAttentionY.csv")
 ClassValues.drop(list(ClassValues.columns)[0], axis=1, inplace=True)
 print(ClassValues.shape)
 
@@ -32,4 +32,4 @@ Xtrain2, XVal, Ytrain2, YVal = train_test_split(Xtrain, Ytrain, test_size=0.2, r
 model = RandomForestClassifier(n_estimators=1000, criterion="entropy")
 model_fit = model.fit(Xtrain2, Ytrain2)
 test_pred = model_fit.predict(Xtest)
-print(accuracy_score(Ytest, test_pred)) 
+print(accuracy_score(Ytest, test_pred))
