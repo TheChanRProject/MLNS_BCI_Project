@@ -47,3 +47,7 @@ plot_confusion_matrix(Ytest, test_pred, title="Untuned Random Forest Confusion M
 plt.savefig('images/rf-untuned-confusion-matrix.png')
 
 from sklearn.tree import export_graphviz
+import pydot
+
+# Visualizing a single tree estimator
+tree = model.
