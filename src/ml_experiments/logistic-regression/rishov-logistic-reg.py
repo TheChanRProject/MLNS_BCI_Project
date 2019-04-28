@@ -16,12 +16,14 @@ NeurFeats.drop(list(NeurFeats.columns)[0], axis=1, inplace=True)
 NeurFeats.rename(columns={j:f"Feature_{i+1}" for i,j in enumerate(NeurFeats)}, inplace=True)
 NeurFeats.head()
 
-# Preprocessing and Mapping Output Labels 
+# Preprocessing and Mapping Output Labels
 
 ClassValues = pd.read_csv("data/Merged/merged_DevAttentionY.csv")
 ClassValues.drop(list(ClassValues.columns)[0], axis=1, inplace=True)
 ClassValues.rename(columns={'2':'Attended/Unattended'}, inplace=True)
 ClassValues.head()
+
+# Working with first 120000 records in both datasets and scaling neural features
 
 NeurFeatExp = NeurFeats.loc[0:119999]
 ClassValuesExp = ClassValues.loc[0:119999]
