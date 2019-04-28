@@ -1,7 +1,7 @@
 # MLNS_BCI_Project
 Final Project for Machine Learning with Neural Signals.
 
-## 3 Parts
+## 5 Parts
 
 ### Part 1: Binary Classification for Unattended versus Attended
 
