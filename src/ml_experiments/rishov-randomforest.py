@@ -57,3 +57,5 @@ export_graphviz(tree, out_file="images/untuned-random-forest-estimator.dot", fea
 
 # Use dot file to create a graph
 (graph, ) = pydot.graph_from_dot_file('images/untuned-random-forest-estimator.dot')
+# Write graph to a png file
+graph.write_png('untuned-random-forest-estimator.png')
