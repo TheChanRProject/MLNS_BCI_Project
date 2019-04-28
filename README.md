@@ -23,6 +23,9 @@ Merged DevAttentionX data and Merged DevAttentionY data available on the Google 
     1. Accuracy: 81.84%
     2. ROC Curve: ![](images/logistic-regression/logistic-regression-roc-curve.png)
     3. Confusion Matrix: ![](images/logistic-regression/logistic-regression-confusion-matrix.png)
+  - To Do
+    1. Implement Recursive Feature Elimination (RFE)
+    2. Test Logistic Regression with Regularization Penalties (L1, L2, ElasticNet) 
 - Linear Discriminant Analysis
   - Results (With Least Squares Shrinkage Parameter)
     1. Accuracy: 81.4%
