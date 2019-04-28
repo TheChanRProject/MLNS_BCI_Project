@@ -9,4 +9,6 @@ devY = find_csv_filenames('data/DevAttY', suffix=".csv")
 
 df = pd.concat([pd.read_csv(f"data/DevAttY/{i}") for i in devY])
 
-print(len(df)) 
+print(len(df))
+
+df.to_csv("data/Merged/merged_DevAttentionY.csv")
