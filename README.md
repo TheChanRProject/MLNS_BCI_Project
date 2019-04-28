@@ -36,9 +36,11 @@ Merged DevAttentionX data and Merged DevAttentionY data available on the Google 
 - Naive Bayes
 
 ### Part 2: Multi-Class Classification for Unattended versus Attended Including Instruments
-- Multiclass LDA
+- Multi-class LDA
 - Neural Network
 - Logistic Regression with Softmax
+- Random Forest
+- Naive Bayes 
 
 ### Part 3: Finding Out the Most Important Features
 
@@ -46,7 +48,7 @@ Merged DevAttentionX data and Merged DevAttentionY data available on the Google 
 - Random Forest Feature Importance
 - Naive Bayes Feature Importance
 - Recursive Feature Elimination with Logistic Regression
-- Stepwise Regression 
+- Stepwise Regression
 
 ### Part 4: Putting it together in a paper
 
