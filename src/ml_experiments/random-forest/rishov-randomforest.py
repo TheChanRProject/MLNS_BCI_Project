@@ -19,7 +19,7 @@ ClassValues = pd.read_csv("data/Merged/merged_DevAttentionY.csv")
 ClassValues.drop(list(ClassValues.columns)[0], axis=1, inplace=True)
 print(ClassValues.shape)
 
-# Getting the first 120000 records for both datasets 
+# Getting the first 120000 records for both datasets
 
 NeurFeatExp = NeurFeat.loc[0:119999]
 ClassValuesExp = ClassValues.loc[0:119999]
@@ -30,6 +30,8 @@ Xtrain, Xtest, Ytrain, Ytest = train_test_split(ZFeatures, ClassValuesExp, test_
 
 # Create the validation sets
 Xtrain2, XVal, Ytrain2, YVal = train_test_split(Xtrain, Ytrain, test_size=0.2, random_state=100)
+
+# Building the Random Forest 
 
 model = RandomForestClassifier(n_estimators=1000, criterion="entropy")
 model_fit = model.fit(Xtrain2, Ytrain2)
