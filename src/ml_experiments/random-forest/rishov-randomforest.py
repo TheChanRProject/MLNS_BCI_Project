@@ -39,7 +39,7 @@ test_pred = model_fit.predict(Xtest)
 test_pred_prob = model_fit.predict_proba(Xtest)
 print(accuracy_score(Ytest, test_pred))
 
-# Plotting the ROC Curve and Confusion Matrix 
+# Plotting the ROC Curve and Confusion Matrix
 
 from jupyterthemes import jtplot
 
@@ -51,6 +51,8 @@ plt.savefig('images/rf-untuned-roc-curve.png')
 
 plot_confusion_matrix(Ytest, test_pred, title="Untuned Random Forest Confusion Matrix")
 plt.savefig('images/rf-untuned-confusion-matrix.png')
+
+# Visualizing one of the trees used to estimate the random forest 
 
 from sklearn.tree import export_graphviz
 import pydot
