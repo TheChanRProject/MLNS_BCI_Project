@@ -21,3 +21,4 @@ ClassValues.head()
 
 NeurFeatExp = NeurFeats.loc[0:119999]
 ClassValuesExp = ClassValues.loc[0:119999]
+ZNeurFeat = scale(NeurFeatExp, axis=0)
