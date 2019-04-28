@@ -38,5 +38,10 @@ print(accuracy_score(Ytest, test_pred))
 from jupyterthemes import jtplot
 
 jtplot.style(theme='monokai')
+plt.figure(figsize=(12,8))
+plot_roc(Ytest, test_pred_prob, title="Untuned Random Forest ROC Curve")
+plt.savefig('images/rf-untuned-roc-curve.png')
 
-plot_roc(Ytest, )
+
+plot_confusion_matrix(Ytest, test_pred, title="Untuned Random Forest Confusion Matrix")
+plt.savefig('images/rf-untuned-confusion-matrix.png')
