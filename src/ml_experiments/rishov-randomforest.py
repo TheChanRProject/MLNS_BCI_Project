@@ -32,4 +32,11 @@ Xtrain2, XVal, Ytrain2, YVal = train_test_split(Xtrain, Ytrain, test_size=0.2, r
 model = RandomForestClassifier(n_estimators=1000, criterion="entropy")
 model_fit = model.fit(Xtrain2, Ytrain2)
 test_pred = model_fit.predict(Xtest)
+test_pred_prob = model_fit.predict_proba(Xtest)
 print(accuracy_score(Ytest, test_pred))
+
+from jupyterthemes import jtplot
+
+jtplot.style(theme='monokai')
+
+plot_roc(Ytest, )
