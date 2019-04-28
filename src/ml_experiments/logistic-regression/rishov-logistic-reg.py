@@ -8,6 +8,7 @@ from sklearn.metrics import accuracy_score
 from scikitplot.metrics import plot_roc, plot_confusion_matrix
 from warnings import filterwarnings
 filterwarnings("ignore")
+from jupyterthemes import jtplot 
 
 # Preprocessing and Mapping Feature Labels
 
@@ -44,4 +45,4 @@ test_pred_prob = model_fit.predict_proba(Xtest)
 
 # Accuracy Score and Plotting ROC Curve and Confusion Matrix
 print(f"Accuracy of model is: {round(accuracy_score(Ytest, test_pred)*100, 2)}%")
-plot_roc()
+plot_roc(Ytest, test_pred_prob, title="Logistic Regression ROC")
