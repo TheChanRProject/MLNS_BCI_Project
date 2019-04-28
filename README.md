@@ -7,6 +7,8 @@ Final Project for Machine Learning with Neural Signals.
 
 Merged DevAttentionX data and Merged DevAttentionY data available on the Google Drive.
 
+Please look at src/ml_experiments/logistic-regression/rishov-logistic-regression.py for the end to end process that is required for all the models. 
+
 - Random Forest
   - Results (Untuned Random Forest with Entropy)
     1. Accuracy: 99.1%
