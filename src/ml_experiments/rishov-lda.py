@@ -1,4 +1,4 @@
-import numpy as np, matplotlib.pyplot as plt, scipy, sklearn, statsmodels, parfit
+import numpy as np, matplotlib.pyplot as plt 
 from scikitplot.metrics import plot_roc, plot_confusion_matrix
 from sklearn.preprocessing import scale
 from sklearn.model_selection import train_test_split
