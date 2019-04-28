@@ -18,7 +18,11 @@ Final Project for Machine Learning with Neural Signals.
     4. Hyperparameter Tuning of Random Forest
     5. Plot Feature Importance
 - Logistic Regression
-- LDA
+- Linear Discriminant Analysis
+  - Results (With Least Squares Shrinkage Parameter)
+    1. Accuracy: 81.4%
+    2. ROC Curve: ![](images/lda/shrinked-lda-roc-curve.png)
+    3. Confusion Matrix: ![](images/lda/lda-confusion-matrix.png) 
 - Neural Network
 - Naive Bayes
 
