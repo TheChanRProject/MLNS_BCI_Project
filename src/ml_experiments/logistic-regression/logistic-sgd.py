@@ -66,4 +66,6 @@ log_elasticnet_pred = log_elasticnet_fit.predict(Xtest)
 log_elasticnet_prob = log_elasticnet_fit.predict_proba(Xtest)
 
 # Plot ROC and Confusion Matrix
+
 plot_roc(Ytest, log_elasticnet_prob, title="SGD Logistic Regression with ElasticNet ROC")
+plot_confusion_matrix(Ytest, log_elasticnet_pred, title="SGD Logistic Regression with ElasticNet Confusion Matrix")
