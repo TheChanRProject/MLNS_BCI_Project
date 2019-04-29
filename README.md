@@ -22,14 +22,7 @@ Please look at src/ml_experiments/logistic-regression/rishov-logistic-regression
     4. Plot Feature Importance
     5. Compare with Gini Criterion
 - Logistic Regression
-  - Results (Non-RFE Logistic Regression with No Penalty)
-    1. Accuracy: 81.84%
-    2. ROC Curve: ![](images/logistic-regression/logistic-regression-roc-curve.png)
-    3. Confusion Matrix: ![](images/logistic-regression/logistic-regression-confusion-matrix.png)
-  - Results (Logistic Regression with SGD and No Penalty)
-    1. Accuracy: 77.85%
-    2. ROC Curve: ![](images/logistic-regression/sgd-log-reg-np-roc-curve.png)
-    3. Confusion Matrix: ![](images/logistic-regression/sgd-log-reg-np-confusion-matrix.png) 
+  - [Results](https://github.com/TheChanRProject/MLNS_BCI_Project/blob/master/results/Unattended_Attended/logistic-regression/results.md) 
   - To Do
     1. Implement Recursive Feature Elimination (RFE)
     2. Test Logistic Regression with Regularization Penalties (L1, L2, ElasticNet)
