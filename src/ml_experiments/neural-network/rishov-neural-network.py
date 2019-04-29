@@ -35,3 +35,5 @@ nn_pred_test_prob = nn_fit.predict_proba(Xtest)
 # Plot ROC curve and confusion matrix for test set
 from jupyterthemes import jtplot
 jtplot.style(theme='monokai')
+
+plot_roc(Ytest, nn_pred_test_prob, title="Neural Network Test ROC")
