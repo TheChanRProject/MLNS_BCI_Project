@@ -45,3 +45,4 @@ log_l2_test_pred_prob = log_l2_fit.predict_proba(Xtest)
 # Plot ROC and Confusion Matrix
 plot_roc(Ytest, log_l2_test_pred_prob, title="Logistic Regression with SGD and L2 ROC")
 plot_confusion_matrix(Ytest, log_l2_test_pred, title="Logistic Regression with SGD and L2 Confusion Matrix")
+print(f"Accuracy Score: {round(accuracy_score(Ytest, log_l2_test_pred)*100,2)}%")
