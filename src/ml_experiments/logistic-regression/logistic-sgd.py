@@ -60,7 +60,10 @@ print(f"Accuracy: {round(accuracy_score(Ytest, log_l1_pred)*100,2)}%")
 
 # SGD Logistic Regression with ElasticNet
 
-log_elasticnet_model = SGDClassifier(loss='log', penalty='elasticnet')
+log_elasticnet_model = SGDClassifier(loss='log', penalty='elasticnet', l1_ratio=0.000000000000000000000000000000000000005)
 log_elasticnet_fit = log_elasticnet_model.fit(Xtrain, Ytrain)
 log_elasticnet_pred = log_elasticnet_fit.predict(Xtest)
 log_elasticnet_prob = log_elasticnet_fit.predict_proba(Xtest)
+
+# Plot ROC and Confusion Matrix
+plot_roc(Ytest, log_elasticnet_prob, title="SGD Logistic Regression with ElasticNet ROC")
