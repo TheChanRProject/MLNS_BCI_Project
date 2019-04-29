@@ -34,3 +34,4 @@ jtplot.style(theme="monokai")
 
 plot_roc(Ytest, log_pred_test_prob, title="Logistic Regression SGD ROC")
 plot_confusion_matrix(Ytest, log_pred_test, title="Logistic Regression SGD Confusion Matrix")
+print(f"Accuracy Score: {round(accuracy_score(Ytest, log_pred_test)*100,2)}%")
