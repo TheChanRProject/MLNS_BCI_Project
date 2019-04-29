@@ -35,3 +35,4 @@ nb_pred_test_prob = nb_fit.predict_proba(Xtest)
 from jupyterthemes import jtplot
 jtplot.style(theme="monokai")
 plot_roc(Ytest, nb_pred_test_prob, title="Naive Bayes ROC on Test Set")
+plot_confusion_matrix(Ytest, nb_pred_test, title="Naive Bayes Test Set Confusion Matrix")
