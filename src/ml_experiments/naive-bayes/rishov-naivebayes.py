@@ -31,4 +31,7 @@ nb_fit = nb_model.fit(Xtrain2, Ytrain2)
 nb_pred_test = nb_fit.predict(Xtest)
 nb_pred_test_prob = nb_fit.predict_proba(Xtest)
 
-# Plotting ROC Curve and Confusion Matrix 
+# Plotting ROC Curve and Confusion Matrix
+from jupyterthemes import jtplot
+jtplot.style(theme="monokai")
+plot_roc(Ytest, nb_pred_test_prob, title="Naive Bayes ROC on Test Set")
