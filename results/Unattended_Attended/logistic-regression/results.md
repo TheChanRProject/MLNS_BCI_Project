@@ -2,13 +2,14 @@
 
 ## Results Without Cross Validation
 
-- ### Logistic Regression Model 1: No Recursive Feature Elimination and No Penalty
+- ### Logistic Regression Model 1: No Recursive Feature Elimination and L2 Penalty
   - Accuracy: 81.84%
   - ROC Curve: ![](../../../images/logistic-regression/logistic-regression-roc-curve.png)
   - Confusion Matrix: ![](../../../images/logistic-regression/logistic-regression-confusion-matrix.png)
 
 - ### Logistic Regression Model 2: No Recursive Feature Elimination, L2 Penalty with Dual Formulation and LibLinear Solver
   - Accuracy: 81.92% 
+  - ROC Curve:
 
 
 - ### Logistic Regression Model 2: Stochastic Gradient Descent (SGD) with No Penalty
