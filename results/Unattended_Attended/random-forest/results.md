@@ -9,6 +9,6 @@
 
 - ### Random Forest Model 2: Untuned with 1000 Decision Tree Estimators with Gini Index Criterion
   - Accuracy: 99.12%
-  - ROC Curve:
-  - Confusion Matrix:
-  - Tree Visualization:
+  - ROC Curve: Same as Model 1
+  - Confusion Matrix: Same as Model 1
+  - Tree Visualization: Same as Model 1 
