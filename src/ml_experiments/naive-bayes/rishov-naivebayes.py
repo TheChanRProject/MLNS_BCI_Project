@@ -24,4 +24,5 @@ Xtrain, Xtest, Ytrain, Ytest = train_test_split(zFeatures, classValues, test_siz
 Xtrain2, Xval, Ytrain2, Yval = train_test_split(Xtrain, Ytrain, test_size=0.2, random_state=100)
 
 # Building a Naive Bayes Classifier Assuming a Gaussian Distribution
-nb_model = GaussianNB() 
+nb_model = GaussianNB()
+nb_fit = nb_model.fit(Xtrain2, Ytrain2)
