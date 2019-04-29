@@ -55,3 +55,4 @@ log_l1_prob = log_l1_fit.predict_proba(Xtest)
 
 # Plot ROC and Confusion Matrix
 plot_roc(Ytest, log_l1_prob, title="Logistic Regression with SGD and L1 ROC")
+plot_confusion_matrix(Ytest, log_l1_pred, title="Logistic Regression with SGD and L1 Confusion Matrix")
