@@ -59,3 +59,13 @@ log_model_prob = log_model_fit.predict_proba(Xtest)
 print(f"Accuracy: {round(accuracy_score(Ytest, log_model_pred)*100,2)}%")
 plot_roc(Ytest, log_model_prob, title="Logistic Regression Dual Formulation ROC")
 plot_confusion_matrix(Ytest, log_model_pred, title="Logistic Regression Dual Formulation Confusion Matrix")
+
+# Non-Dual Liblinear Logistic Regression Solver
+
+log_model_2 = LogisticRegression(penalty='l2', dual=False, solver='liblinear', random_state=100)
+log_model_2_fit = log_model_2.fit(Xtrain2,Ytrain2)
+log_model_2_pred = log_model_fit.predict(Xtest)
+log_model_2_prob = log_model_fit.predict_proba(Xtest)
+
+# Plot ROC and Confusion Matrix
+print(f"Accuracy: {round(accuracy_score(Ytest, log_model_2_pred)*100,2)}%")
