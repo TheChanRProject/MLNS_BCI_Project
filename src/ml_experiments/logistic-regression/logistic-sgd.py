@@ -37,3 +37,4 @@ plot_confusion_matrix(Ytest, log_pred_test, title="Logistic Regression SGD Confu
 print(f"Accuracy Score: {round(accuracy_score(Ytest, log_pred_test)*100,2)}%")
 
 # Logistic Regression with SGD and L2 Penalty
+log_l2_model = SGDClassifier(loss='log', penalty='l2')
