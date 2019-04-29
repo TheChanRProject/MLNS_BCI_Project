@@ -16,3 +16,6 @@ classValues = pd.read_csv("data/Merged/merged_labeled_DevAttentionY.csv").loc[0:
 
 # Scale features
 zFeatures = scale(neuralFeatures, axis=0)
+
+# Splitting into Training and Testing Sets
+Xtrain, Xtest, Ytrain, Ytest = train_test_split(zFeatures, classValues, test_size=0.2, random_state=100)
