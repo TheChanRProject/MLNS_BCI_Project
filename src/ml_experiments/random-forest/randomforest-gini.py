@@ -30,3 +30,5 @@ rf_prob = rf_fit.predict_proba(Xtest)
 
 # Plot ROC and Confusion Matrix
 print(f"Accuracy Score: {round(accuracy_score(Ytest, rf_pred)*100,2)}%")
+plot_roc(Ytest, rf_prob, title="Random Forest with Gini Index ROC")
+plot_confusion_matrix(Ytest, rf_pred, title="Random Forest with Gini Index Confusion Matrix")
