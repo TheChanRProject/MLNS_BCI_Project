@@ -52,3 +52,5 @@ log_l1_model = SGDClassifier(loss='log', penalty='l1')
 log_l1_fit = log_l1_model.fit(Xtrain, Ytrain)
 log_l1_pred = log_l1_fit.predict(Xtest)
 log_l1_prob = log_l1_fit.predict_proba(Xtest)
+
+# Plot ROC and Confusion Matrix
