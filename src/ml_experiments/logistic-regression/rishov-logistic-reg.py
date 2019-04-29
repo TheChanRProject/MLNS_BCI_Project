@@ -47,4 +47,10 @@ test_pred_prob = model_fit.predict_proba(Xtest)
 # Accuracy Score and Plotting ROC Curve and Confusion Matrix
 print(f"Accuracy of model is: {round(accuracy_score(Ytest, test_pred)*100, 2)}%")
 plot_roc(Ytest, test_pred_prob, title="Logistic Regression ROC")
-plot_confusion_matrix(Ytest, test_pred, title="Logistic Regression Confusion Matrix") 
+plot_confusion_matrix(Ytest, test_pred, title="Logistic Regression Confusion Matrix")
+
+# Logistic Regression with L2 Penalty
+log_model = LogisticRegression(penalty='l2', dual=True, solver='liblinear', random_state=100)
+log_model_fit = log_model.fit(Xtrain2, Ytrain2)
+log_model_pred = log_model_fit.predict(Xtest)
+log_model_prob = log_model_fit.predict_proba(Xtest)
