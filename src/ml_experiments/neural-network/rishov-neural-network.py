@@ -31,3 +31,7 @@ nn_model = MLPClassifier(activation='logistic', solver='sgd', hidden_layer_sizes
 nn_fit = nn_model.fit(Xtrain2, Ytrain2)
 nn_pred_test = nn_fit.predict(Xtest)
 nn_pred_test_prob = nn_fit.predict_proba(Xtest)
+
+# Plot ROC curve and confusion matrix for test set
+from jupyterthemes import jtplot
+jtplot.style(theme='monokai')
