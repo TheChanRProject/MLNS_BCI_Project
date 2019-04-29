@@ -14,7 +14,9 @@ neuralFeatures = pd.read_csv("data/Merged/merged_labeled_DevAttentionX.csv").loc
 # Drop Unnamed column
 neuralFeatures.drop(list(neuralFeatures.columns)[0], axis=1, inplace=True)
 # Reading in Outputs: Attended or Unattended from Labeled DevAttentionY Data
-classValues = pd.read_csv("data/Merged/merged_labeled_DevAttentionY.csv")
+classValues = pd.read_csv("data/Merged/merged_labeled_DevAttentionY.csv").loc[0:119999]
+# Drop Unnamed column
+classValues.drop(list(classValues.columns)[0], axis=1, inplace=True)
 
 # Creating Training and Testing Sets
 Xtrain, Xtest, Ytrain, Ytest = train_test_split(zFeatures, classValues, test_size=0.2, random_state=100)
