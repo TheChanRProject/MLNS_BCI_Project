@@ -42,7 +42,9 @@ Please look at src/ml_experiments/logistic-regression/rishov-logistic-regression
     3. Confusion Matrix: ![](images/naive-bayes/nb-confusion-matrix-test.png)
   - To Do
     1. Implement Stochastic Gradient Descent (SGD) Classifier with modified-huber loss function
-    2. Use regularization: l1, l2, ElasticNet  
+    2. Use regularization: l1, l2, ElasticNet
+    3. Implement cross validation
+    4. If time available: Ensemble with AdaBoost  
 
 ### Part 2: Multi-Class Classification for Unattended versus Attended Including Instruments
 - Multi-class LDA
