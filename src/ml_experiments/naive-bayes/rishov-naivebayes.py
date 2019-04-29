@@ -23,4 +23,5 @@ Xtrain, Xtest, Ytrain, Ytest = train_test_split(zFeatures, classValues, test_siz
 # Partitioning Training Set into Training and Validation Sets
 Xtrain2, Xval, Ytrain2, Yval = train_test_split(Xtrain, Ytrain, test_size=0.2, random_state=100)
 
-# Building a Naive Bayes Classifier Assuming a Gaussian Distribution 
+# Building a Naive Bayes Classifier Assuming a Gaussian Distribution
+nb_model = GaussianNB() 
