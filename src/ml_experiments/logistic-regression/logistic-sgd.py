@@ -9,3 +9,7 @@ from sklearn.linear_model import SGDClassifier
 from scikitplot.metrics import plot_roc, plot_confusion_matrix
 from warnings import filterwarnings
 filterwarnings("ignore")
+
+# Reading Neural Features and Outputs
+neuralFeatures = pd.read_csv("data/Merged/merged_labeled_DevAttentionX.csv").loc[0:119999]
+classValues = pd.read_csv("data/Merged/merged_labeled_DevAttentionY.csv").loc[0:119999]
