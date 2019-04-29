@@ -19,3 +19,6 @@ zFeatures = scale(neuralFeatures, axis=0)
 
 # Splitting into Training and Testing Sets
 Xtrain, Xtest, Ytrain, Ytest = train_test_split(zFeatures, classValues, test_size=0.2, random_state=100)
+
+# Logistic Regression Classifier with Stochastic Gradient Descent
+log_model = SGDClassifier(loss='log', penalty='none')
