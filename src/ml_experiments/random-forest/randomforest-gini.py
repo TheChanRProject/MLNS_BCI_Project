@@ -8,3 +8,5 @@ from sklearn.preprocessing import scale
 from sklearn.metrics import accuracy_score
 from warnings import filterwarnings
 filterwarnings("ignore")
+from jupyterthemes import jtplot
+jtplot.style(theme='monokai')
