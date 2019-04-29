@@ -28,3 +28,6 @@ Xtrain2, Xval, Ytrain2, Yval = train_test_split(Xtrain, Ytrain, test_size=0.2, r
 
 # Build multi-layer perceptron (Artificial Neural Network)
 nn_model = MLPClassifier(activation='logistic', solver='sgd', hidden_layer_sizes=(10,15), random_state=1)
+nn_fit = nn_model.fit(Xtrain2, Ytrain2)
+nn_pred_test = nn_fit.predict(Xtest)
+nn_pred_test_prob = nn_fit.predict_proba(Xtest)
