@@ -28,3 +28,7 @@ Xtrain2, Xval, Ytrain2, Yval = train_test_split(Xtrain, Ytrain, test_size=0.2, r
 # Building a Naive Bayes Classifier Assuming a Gaussian Distribution
 nb_model = GaussianNB()
 nb_fit = nb_model.fit(Xtrain2, Ytrain2)
+nb_pred_test = nb_fit.predict(Xtest)
+nb_pred_test_prob = nb_fit.predict_proba(Xtest)
+
+# Plotting ROC Curve and Confusion Matrix 
