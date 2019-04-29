@@ -21,3 +21,12 @@ zFeat = scale(NeurFeat, axis=0)
 Xtrain1, Xtest, Ytrain1, Ytest = train_test_split(zFeat, ClassValues, test_size=0.2, random_state=100)
 # Training -> Training and Validation Sets
 Xtrain2, Xval, Ytrain2, Yval = train_test_split(Xtrain1, Ytrain1, test_size=0.2, random_state=100)
+
+# Random Forest with Gini Index
+rf_model = RandomForestClassifier(n_estimators=1000, criterion='gini')
+rf_fit = rf_model.fit(Xtrain2, Ytrain2)
+rf_pred = rf_fit.predict(Xtest)
+rf_prob = rf_fit.predict_proba(Xtest)
+
+# Plot ROC and Confusion Matrix
+print(f"Accuracy Score: {round(accuracy_score(Ytest, rf_pred)*100,2)}%")
