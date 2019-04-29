@@ -22,3 +22,5 @@
   - Accuracy: 76.97%
   - ROC Curve: ![](../../../images/logistic-regression/sgd-log-reg-l1-roc-curve.png)
   - Confusion Matrix: ![](../../../images/logistic-regression/sgd-log-reg-l1-confusion-matrix.png)
+
+- ### Logistic Regression Model 4: Stochastic Gradient Descent (SGD) with ElasticNet
