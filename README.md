@@ -27,10 +27,7 @@ Please look at src/ml_experiments/logistic-regression/rishov-logistic-regression
     1. Implement Recursive Feature Elimination (RFE)
     2. Test Logistic Regression with Regularization Penalties (L1, ElasticNet)
 - Linear Discriminant Analysis
-  - Results (With Least Squares Shrinkage Parameter)
-    1. Accuracy: 81.4%
-    2. ROC Curve: ![](images/lda/shrinked-lda-roc-curve.png)
-    3. Confusion Matrix: ![](images/lda/lda-confusion-matrix.png)
+  - [Results](https://github.com/TheChanRProject/MLNS_BCI_Project/blob/master/results/Unattended_Attended/lda/results.md)
 - Neural Network
   - [Results](https://github.com/TheChanRProject/MLNS_BCI_Project/blob/master/results/Unattended_Attended/neural-network/results.md)
   - To Do:
