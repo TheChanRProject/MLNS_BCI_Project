@@ -41,3 +41,6 @@ log_l2_model = SGDClassifier(loss='log', penalty='l2')
 log_l2_fit = log_l2_model.fit(Xtrain, Ytrain)
 log_l2_test_pred = log_l2_fit.predict(Xtest)
 log_l2_test_pred_prob = log_l2_fit.predict_proba(Xtest)
+
+# Plot ROC and Confusion Matrix
+plot_roc(Ytest, log_l2_test_pred_prob, title="Logistic Regression with SGD and L2 ROC")
