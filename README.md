@@ -7,16 +7,12 @@ Final Project for NEUR182: "Machine Learning with Neural Signals". This BCI Proj
 
 Merged and Labeled DevAttentionX data and Merged DevAttentionY data available on the Google Drive.
 
-Please Note: Make sure to drop the first column from the dataframe when reading the csv files otherwise you will get an error when you instantiate your classifier in scikit-learn. 
+Please Note: Make sure to drop the first column from the dataframe when reading the csv files otherwise you will get an error when you instantiate your classifier in scikit-learn.
 
 Please look at src/ml_experiments/logistic-regression/rishov-logistic-regression.py for the end to end template that is required for all the models.
 
 - Random Forest
-  - Results (Untuned Random Forest with Entropy)
-    1. Accuracy: 99.1%
-    2. ROC Curve: ![](images/random-forest/untuned-rf-roc-curve.png)
-    3. Confusion Matrix: ![](images/random-forest/untuned-rf-confusion-matrix.png)
-    4. Estimator Visualization: ![](images/random-forest/untuned-random-forest-estimator.png)  
+  - [Results](https://github.com/TheChanRProject/MLNS_BCI_Project/blob/master/results/Unattended_Attended/random-forest/results.md)
   - To Do
     1. Implement Cross Validation to Select Best Tree Estimator
     2. Visualize Best Tree Estimator
