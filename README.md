@@ -11,6 +11,8 @@ Please Note: Make sure to drop the first column from the dataframe when reading 
 
 Please look at src/ml_experiments/logistic-regression/rishov-logistic-regression.py for the end to end template that is required for all the models.
 
+## Best Model for Task 1: Random Forest 
+
 - Random Forest
   - [Results](https://github.com/TheChanRProject/MLNS_BCI_Project/blob/master/results/Unattended_Attended/random-forest/results.md)
   - To Do
