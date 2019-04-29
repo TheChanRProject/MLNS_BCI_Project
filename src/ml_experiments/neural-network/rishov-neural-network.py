@@ -22,3 +22,9 @@ zFeatures = scale(neuralFeatures, axis=0)
 
 # Split data into training and testing sets
 Xtrain, Xtest, Ytrain, Ytest = train_test_split(zFeatures, classValues, test_size=0.2, random_state=100)
+
+# Partition training set into training and validation sets
+Xtrain2, Xval, Ytrain2, Yval = train_test_split(Xtrain, Ytrain, test_size=0.2, random_state=100)
+
+# Build multi-layer perceptron (Artificial Neural Network)
+nn_model = MLPClassifier(activation='logistic', solver='sgd', hidden_layer_sizes=(10,15), random_state=1)
