@@ -5,7 +5,9 @@ Final Project for NEUR182: "Machine Learning with Neural Signals". This BCI Proj
 
 ### Part 1: Binary Classification for Unattended versus Attended
 
-Merged DevAttentionX data and Merged DevAttentionY data available on the Google Drive.
+Merged and Labeled DevAttentionX data and Merged DevAttentionY data available on the Google Drive.
+
+Please Note: Make sure to drop the first column from the dataframe when reading the csv files otherwise you will get an error when you instantiate your classifier in scikit-learn. 
 
 Please look at src/ml_experiments/logistic-regression/rishov-logistic-regression.py for the end to end template that is required for all the models.
 
