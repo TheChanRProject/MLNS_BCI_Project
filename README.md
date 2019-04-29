@@ -35,10 +35,7 @@ Please look at src/ml_experiments/logistic-regression/rishov-logistic-regression
     2. Avoid overfitting with dropout, regularization, and SGD learning rate tuning
     3. Implement cross validation
 - Naive Bayes
-  - Results (Gaussian Prior)
-    1. Accuracy: 40.1%
-    2. ROC Curve: ![](images/naive-bayes/nb-roc-test.png)
-    3. Confusion Matrix: ![](images/naive-bayes/nb-confusion-matrix-test.png)
+  - [Results](https://github.com/TheChanRProject/MLNS_BCI_Project/blob/master/results/Unattended_Attended/naive-bayes/results.md)
   - To Do
     1. Implement Stochastic Gradient Descent (SGD) Classifier with modified-huber loss function
     2. Use regularization: l1, l2, ElasticNet
