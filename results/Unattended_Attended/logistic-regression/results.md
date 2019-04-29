@@ -9,8 +9,8 @@
 
 - ### Logistic Regression Model 2: No Recursive Feature Elimination, L2 Penalty with Dual Formulation and LibLinear Solver
   - Accuracy: 81.92%
-  - ROC Curve: ![](../../../log-reg-dual-l2-roc-curve.png)
-  - Confusion Matrix: ![](../../../log-reg-dual-l2-confusion-matrix.png)
+  - ROC Curve: ![](../../../images/logistic-regression/log-reg-dual-l2-roc-curve.png)
+  - Confusion Matrix: ![](../../../images/logistic-regression/log-reg-dual-l2-confusion-matrix.png)
 
 
 - ### Logistic Regression Model 2: Stochastic Gradient Descent (SGD) with No Penalty
