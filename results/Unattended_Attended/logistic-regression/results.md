@@ -13,7 +13,7 @@
   - ROC Curve: ![](../../../images/logistic-regression/sgd-log-reg-np-roc-curve.png)
   - Confusion Matrix: ![](../../../images/logistic-regression/sgd-log-reg-np-confusion-matrix.png)
 
-### - Logistic Regression Model 3: Stochastic Gradient Descent (SGD) with L2 Regularization
+- ### Logistic Regression Model 3: Stochastic Gradient Descent (SGD) with L2 Regularization
   - Accuracy: 78.82%
   - ROC Curve: ![](../../../images/logistic-regression/sgd-log-reg-l2-roc-curve.png)
   - Confusion Matrix: ![](../../../images/logistic-regression/sgd-log-reg-l2-confusion-matrix.png)
