@@ -48,3 +48,7 @@ plot_confusion_matrix(Ytest, log_l2_test_pred, title="Logistic Regression with S
 print(f"Accuracy Score: {round(accuracy_score(Ytest, log_l2_test_pred)*100,2)}%")
 
 # Logistic Regression with SGD and L1 Regularization
+log_l1_model = SGDClassifier(loss='log', penalty='l1')
+log_l1_fit = log_l1_model.fit(Xtrain, Ytrain)
+log_l1_pred = log_l1_fit.predict(Xtest)
+log_l1_prob = log_l1_fit.predict_proba(Xtest)
