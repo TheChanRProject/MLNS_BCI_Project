@@ -7,6 +7,9 @@
   - ROC Curve: ![](../../../images/logistic-regression/logistic-regression-roc-curve.png)
   - Confusion Matrix: ![](../../../images/logistic-regression/logistic-regression-confusion-matrix.png)
 
+- ### Logistic Regression Model 2: No Recursive Feature Elimination, L2 Penalty with Dual Formulation and LibLinear Solver
+  - Accuracy: 81.92% 
+
 
 - ### Logistic Regression Model 2: Stochastic Gradient Descent (SGD) with No Penalty
   - Accuracy: 77.85%
