@@ -12,7 +12,9 @@ filterwarnings("ignore")
 
 # Reading Neural Features and Outputs
 neuralFeatures = pd.read_csv("data/Merged/merged_labeled_DevAttentionX.csv").loc[0:119999]
+neuralFeatures.drop(list(neuralFeatures.columns)[0], axis=1, inplace=True)
 classValues = pd.read_csv("data/Merged/merged_labeled_DevAttentionY.csv").loc[0:119999]
+classValues.drop(list(classValues.columns)[0], axis=1, inplace=True)
 
 # Scale features
 zFeatures = scale(neuralFeatures, axis=0)
@@ -22,3 +24,6 @@ Xtrain, Xtest, Ytrain, Ytest = train_test_split(zFeatures, classValues, test_siz
 
 # Logistic Regression Classifier with Stochastic Gradient Descent
 log_model = SGDClassifier(loss='log', penalty='none')
+log_fit = log_model.fit(Xtrain, Ytrain)
+log_pred_test = log_fit.predict(Xtest)
+log_pred_test_prob = log_fit.predict_proba(Xtest)
