@@ -39,6 +39,10 @@ Please look at src/ml_experiments/logistic-regression/rishov-logistic-regression
     1. Accuracy: 83.83%
     2. ROC Curve: ![](images/neural-network/mlp-test-roc.png)
     3. Confusion Matrix: ![](images/neural-network/mlp-test-confusion-matrix.png)
+  - To Do:
+    1. Experiment with more deep layers, different activation functions
+    2. Avoid overfitting with dropout, regularization, and SGD learning rate tuning
+    3. Implement cross validation 
 - Naive Bayes
   - Results (Gaussian Prior)
     1. Accuracy: 40.1%
