@@ -11,3 +11,8 @@ filterwarnings("ignore")
 
 # Read in labeled neural features
 neuralFeatures = pd.read_csv("data/Merged/merged_labeled_DevAttentionX.csv").loc[0:119999]
+neuralFeatures.drop(list(neuralFeatures.columns)[0], axis=1, inplace=True)
+
+# Read in labeled outputs Attended versus Unattended
+classValues = pd.read_csv("data/Merged/merged_labeled_DevAttentionY.csv").loc[0:119999]
+classValues.drop(list(classValues.columns)[0], axis=1, inplace=True)
