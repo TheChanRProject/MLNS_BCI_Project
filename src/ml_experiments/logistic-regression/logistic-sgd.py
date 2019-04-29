@@ -27,3 +27,10 @@ log_model = SGDClassifier(loss='log', penalty='none')
 log_fit = log_model.fit(Xtrain, Ytrain)
 log_pred_test = log_fit.predict(Xtest)
 log_pred_test_prob = log_fit.predict_proba(Xtest)
+
+# Plot ROC curve and confusion matrix
+from jupyterthemes import jtplot
+jtplot.style(theme="monokai")
+
+plot_roc(Ytest, log_pred_test_prob, title="Logistic Regression SGD ROC")
+plot_confusion_matrix(Ytest, log_pred_test, title="Logistic Regression SGD Confusion Matrix")
