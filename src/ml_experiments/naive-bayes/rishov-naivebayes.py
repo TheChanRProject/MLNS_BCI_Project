@@ -36,3 +36,4 @@ from jupyterthemes import jtplot
 jtplot.style(theme="monokai")
 plot_roc(Ytest, nb_pred_test_prob, title="Naive Bayes ROC on Test Set")
 plot_confusion_matrix(Ytest, nb_pred_test, title="Naive Bayes Test Set Confusion Matrix")
+print(f"Accuracy is {round(accuracy_score(Ytest, nb_pred_test)*100, 2)}%")
