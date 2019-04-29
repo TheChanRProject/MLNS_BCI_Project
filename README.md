@@ -11,7 +11,7 @@ Please Note: Make sure to drop the first column from the dataframe when reading 
 
 Please look at src/ml_experiments/logistic-regression/rishov-logistic-regression.py for the end to end template that is required for all the models.
 
-## Best Model for Task 1: Random Forest 
+## Best Model for Task 1: Random Forest
 
 - Random Forest
   - [Results](https://github.com/TheChanRProject/MLNS_BCI_Project/blob/master/results/Unattended_Attended/random-forest/results.md)
@@ -32,10 +32,7 @@ Please look at src/ml_experiments/logistic-regression/rishov-logistic-regression
     2. ROC Curve: ![](images/lda/shrinked-lda-roc-curve.png)
     3. Confusion Matrix: ![](images/lda/lda-confusion-matrix.png)
 - Neural Network
-  - Results (Multi-layer Perceptron)
-    1. Accuracy: 83.83%
-    2. ROC Curve: ![](images/neural-network/mlp-test-roc.png)
-    3. Confusion Matrix: ![](images/neural-network/mlp-test-confusion-matrix.png)
+  - [Results](https://github.com/TheChanRProject/MLNS_BCI_Project/blob/master/results/Unattended_Attended/neural-network/results.md)
   - To Do:
     1. Experiment with more deep layers, different activation functions
     2. Avoid overfitting with dropout, regularization, and SGD learning rate tuning
