@@ -8,3 +8,6 @@ from sklearn.metrics import accuracy_score
 from scikitplot.metrics import plot_roc, plot_confusion_matrix
 from warnings import filterwarnings
 filterwarnings("ignore")
+
+# Read in labeled neural features
+neuralFeatures = pd.read_csv("data/Merged/merged_labeled_DevAttentionX.csv").loc[0:119999]
