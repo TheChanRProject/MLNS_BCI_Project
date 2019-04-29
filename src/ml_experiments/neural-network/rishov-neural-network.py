@@ -19,3 +19,6 @@ classValues.drop(list(classValues.columns)[0], axis=1, inplace=True)
 
 # Scale neural features
 zFeatures = scale(neuralFeatures, axis=0)
+
+# Split data into training and testing sets
+Xtrain, Xtest, Ytrain, Ytest = train_test_split(zFeatures, classValues, test_size=0.2, random_state=100)
