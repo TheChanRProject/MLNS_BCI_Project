@@ -35,17 +35,20 @@ Please look at src/ml_experiments/logistic-regression/rishov-logistic-regression
     2. ROC Curve: ![](images/lda/shrinked-lda-roc-curve.png)
     3. Confusion Matrix: ![](images/lda/lda-confusion-matrix.png)
 - Neural Network
+- Naive Bayes
 
 ### Part 2: Multi-Class Classification for Unattended versus Attended Including Instruments
 - Multi-class LDA
 - Neural Network
 - Logistic Regression with Softmax
 - Random Forest
+- Naive Bayes
 
 ### Part 3: Finding Out the Most Important Features
 
 - Relevance Vector Machine [If Time Available]
 - Random Forest Feature Importance
+- Naive Bayes Feature Importance
 - Recursive Feature Elimination with Logistic Regression
 - Stepwise Regression [If Time Available]
 
@@ -76,8 +79,14 @@ Tutorials to look at:
 - [William Cohen: Logistic Regression with Stochastic Gradient Descent](http://www.cs.cmu.edu/~wcohen/10-605/sgd-part2.pdf)
 - [Scikit-learn Docs: SGD Classifier](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.SGDClassifier.html#sklearn.linear_model.SGDClassifier)
 
+3. Build a Naive Bayes model
 
-3. Build a Neural Network
+Tutorials to look at:
+
+- [Gaurav Chauhan: All About Naive Bayes](https://towardsdatascience.com/all-about-naive-bayes-8e13cef044cf)
+- [Naive Bayes with Scikit-Learn](https://github.com/2796gaurav/Naive-bayes-explained/blob/master/Naive%20bayes/Naive%20Bayes%20in%20scikit%20learn.ipynb)
+
+4. Build a Neural Network
 
 Tutorials to look at:
 
