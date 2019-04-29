@@ -36,6 +36,9 @@ Please look at src/ml_experiments/logistic-regression/rishov-logistic-regression
     3. Confusion Matrix: ![](images/lda/lda-confusion-matrix.png)
 - Neural Network
 - Naive Bayes
+  - Results (Gaussian Prior)
+    1. Accuracy: 40.1%
+    2. ROC Curve: ![](images/naive-bayes/nb-roc-test.png)
 
 ### Part 2: Multi-Class Classification for Unattended versus Attended Including Instruments
 - Multi-class LDA
