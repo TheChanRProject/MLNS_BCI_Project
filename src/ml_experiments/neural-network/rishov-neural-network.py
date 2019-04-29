@@ -37,3 +37,4 @@ from jupyterthemes import jtplot
 jtplot.style(theme='monokai')
 
 plot_roc(Ytest, nn_pred_test_prob, title="Neural Network Test ROC")
+plot_confusion_matrix(Ytest, nn_pred_test, title="Neural Network Confusion Matrix")
