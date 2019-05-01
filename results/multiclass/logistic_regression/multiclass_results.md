@@ -1,3 +1,6 @@
+# Multi-Class Classification for Unattended versus Attended Including Instruments
+# Logistic Regression with Softmax
+
 Accuracy of model is: 80.83%
 
 Accuracy: 81.92%
