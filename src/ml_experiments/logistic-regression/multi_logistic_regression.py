@@ -39,7 +39,7 @@ Xtrain2, Xval, Ytrain2, Yval = train_test_split(Xtrain, Ytrain, test_size=0.2, r
 
 # Building a Logistic Regression Model
 
-model = LogisticRegression(solver = 'lbfgs')
+model = LogisticRegression(solver = 'lbfgs', multi_class= 'multinomial')
 model_fit = model.fit(Xtrain2, Ytrain2)
 test_pred = model_fit.predict(Xtest)
 test_pred_prob = model_fit.predict_proba(Xtest)
