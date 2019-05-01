@@ -102,3 +102,4 @@ Tutorials to look at:
 
 - [Resources for Grid Search](https://stackabuse.com/cross-validation-and-grid-search-for-model-selection-in-python/)
 - [Resources for Grid Search](https://stats.stackexchange.com/questions/375682/difference-between-using-cv-5-or-cv-kfoldn-splits-5-in-cross-val-score)
+- [Randomized vs Grid Search](https://scikit-learn.org/stable/auto_examples/model_selection/plot_randomized_search.html)
