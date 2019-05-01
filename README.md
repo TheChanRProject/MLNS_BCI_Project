@@ -45,8 +45,8 @@ Please look at src/ml_experiments/logistic-regression/rishov-logistic-regression
 ### Part 2: Multi-Class Classification for Unattended versus Attended Including Instruments
 - Multi-class LDA
 - Neural Network
-  - [Results](https://github.com/TheChanRProject/MLNS_BCI_Project/blob/master/results/multiclass/logistic_regression/multiclass_results.md)
 - Logistic Regression with Softmax
+  - [Results](https://github.com/TheChanRProject/MLNS_BCI_Project/blob/master/results/multiclass/logistic_regression/multiclass_results.md)
 - Random Forest
 
 ### Part 3: Finding Out the Most Important Features
