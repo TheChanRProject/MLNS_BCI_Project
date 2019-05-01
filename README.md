@@ -47,13 +47,11 @@ Please look at src/ml_experiments/logistic-regression/rishov-logistic-regression
 - Neural Network
 - Logistic Regression with Softmax
 - Random Forest
-- Naive Bayes
 
 ### Part 3: Finding Out the Most Important Features
 
 - Relevance Vector Machine [If Time Available]
 - Random Forest Feature Importance
-- Naive Bayes Feature Importance
 - Recursive Feature Elimination with Logistic Regression
 - Stepwise Regression [If Time Available]
 
@@ -68,7 +66,7 @@ Resources:
 
 ## Tasks:
 
-1. Build a random forest
+1. Build a random forest (Siena)
 
 Tutorials to look at:
 
@@ -76,7 +74,7 @@ Tutorials to look at:
 - [Will Koehrsen: Visualizing the Random Forest](https://towardsdatascience.com/how-to-visualize-a-decision-tree-from-a-random-forest-in-python-using-scikit-learn-38ad2d75f21c)
 - If Time Available: [Optimizing of Ensemble Classifiers using Genetic Algorithm](https://pdfs.semanticscholar.org/3ac5/fe864ef84b4b764f600ccf67c980d0e9ac94.pdf)
 
-2. Build a logistic regression
+2. Build a logistic regression (Teresa)
 
 Tutorials to look at:
 
@@ -84,23 +82,14 @@ Tutorials to look at:
 - [William Cohen: Logistic Regression with Stochastic Gradient Descent](http://www.cs.cmu.edu/~wcohen/10-605/sgd-part2.pdf)
 - [Scikit-learn Docs: SGD Classifier](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.SGDClassifier.html#sklearn.linear_model.SGDClassifier)
 
-3. Build a Naive Bayes model
-
-Tutorials to look at:
-
-- [Gaurav Chauhan: All About Naive Bayes](https://towardsdatascience.com/all-about-naive-bayes-8e13cef044cf)
-- [Naive Bayes with Scikit-Learn](https://github.com/2796gaurav/Naive-bayes-explained/blob/master/Naive%20bayes/Naive%20Bayes%20in%20scikit%20learn.ipynb)
-
-4. Build a Neural Network
+3. Build a Neural Network (Si Ke)
 
 Tutorials to look at:
 
 - [Neural Networks and Backprop in Scikitlearn](https://www.youtube.com/watch?v=X8SPO875mQY)
 - [GitHub for the Above Video](https://github.com/shreyans29/thesemicolon/blob/master/Neural%20Networks%20and%20BackPropogation.ipynb)
 
-- [MLP Classifier in SKLearn](https://scikit-learn.org/stable/modules/neural_networks_supervised.html)
-
-5. Cross Validation
+4. Cross Validation
 
 - [Resources for Grid Search](https://stackabuse.com/cross-validation-and-grid-search-for-model-selection-in-python/)
 - [Resources for Grid Search](https://stats.stackexchange.com/questions/375682/difference-between-using-cv-5-or-cv-kfoldn-splits-5-in-cross-val-score)
