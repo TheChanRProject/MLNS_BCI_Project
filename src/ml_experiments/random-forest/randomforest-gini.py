@@ -12,8 +12,8 @@ from jupyterthemes import jtplot
 jtplot.style(theme='monokai')
 
 NeurFeat = pd.read_csv("data/Merged/merged_labeled_DevAttentionX.csv").loc[0:119999]
-ClassValues = pd.read_csv("data/Merged/merged_labeled_DevAttentionY.csv").loc[0:119999]
-NeurFeat.drop(list(NeurFeat.columns)[0], axis=1, inplace=True)
+ClassValues = pd.read_csv("data/Merged/merged_labeled_DevAttentionY.csv").loc[0:119999] #capping data
+NeurFeat.drop(list(NeurFeat.columns)[0], axis=1, inplace=True) #Drop blank column
 ClassValues.drop(list(ClassValues.columns)[0], axis=1, inplace=True)
 zFeat = scale(NeurFeat, axis=0)
 
@@ -27,6 +27,8 @@ rf_model = RandomForestClassifier(n_estimators=1000, criterion='gini')
 rf_fit = rf_model.fit(Xtrain2, Ytrain2)
 rf_pred = rf_fit.predict(Xtest)
 rf_prob = rf_fit.predict_proba(Xtest)
+
+
 
 # Plot ROC and Confusion Matrix
 print(f"Accuracy Score: {round(accuracy_score(Ytest, rf_pred)*100,2)}%")
