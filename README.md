@@ -89,6 +89,8 @@ Tutorials to look at:
 - [Neural Networks and Backprop in Scikitlearn](https://www.youtube.com/watch?v=X8SPO875mQY)
 - [GitHub for the Above Video](https://github.com/shreyans29/thesemicolon/blob/master/Neural%20Networks%20and%20BackPropogation.ipynb)
 
+- [Sklearn Neural Network API Docs](https://scikit-neuralnetwork.readthedocs.io/en/latest/module_mlp.html)
+
 4. Cross Validation
 
 - [Resources for Grid Search](https://stackabuse.com/cross-validation-and-grid-search-for-model-selection-in-python/)
