@@ -88,7 +88,7 @@ Tutorials to look at:
 - [William Cohen: Logistic Regression with Stochastic Gradient Descent](http://www.cs.cmu.edu/~wcohen/10-605/sgd-part2.pdf)
 - [Scikit-learn Docs: SGD Classifier](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.SGDClassifier.html#sklearn.linear_model.SGDClassifier)
 
-3. Build a Neural Network (Si Ke)
+3. Build a Neural Network (SiKe)
 
 Tutorials to look at:
 
