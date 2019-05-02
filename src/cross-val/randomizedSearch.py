@@ -23,7 +23,7 @@ def RandomForest(x_df, y_df, cv, n):
     random_search = RandomizedSearchCV(model, param_distributions=params, cv=cv, n_iter=n)
     random_fit = random_search.fit(x_df, y_df)
     print(random_fit.cv_results_)
-    print(f"Best Cross-Validated Accuracy: {round(random_fit.best_score_()*100,2)}%")
+    print(f"Best Cross-Validated Accuracy: {round(random_fit.best_score_*100,2)}%")
     print(f"Best Model Parameters: {best_params_}")
     return random_fit
 
@@ -36,7 +36,7 @@ def noSGDLogisticRegression(x_df, y_df, cv, n):
     random_search = RandomizedSearchCV(model, param_distributions=params, cv=cv, n_iter=n)
     random_fit = random_search.fit(x_df, y_df)
     print(random_fit.cv_results_)
-    print(f"Best Cross-Validated Accuracy: {round(random_fit.best_score_()*100,2)}%")
+    print(f"Best Cross-Validated Accuracy: {round(random_fit.best_score_*100,2)}%")
     print(f"Best Model Parameters: {best_params_}")
     return random_fit
 
