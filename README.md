@@ -46,7 +46,6 @@ Please look at src/ml_experiments/logistic-regression/rishov-logistic-regression
 - Multi-class LDA
 - Neural Network
 - Logistic Regression with Softmax
-  - [Results](https://github.com/TheChanRProject/MLNS_BCI_Project/blob/master/results/multiclass/logistic_regression/multiclass_results.md)
 - Random Forest
 
 ### Part 3: Finding Out the Most Important Features
