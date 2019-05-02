@@ -52,3 +52,22 @@ def SGDLogisticRegression(x_df, y_df, cv, n):
     print(f"Mean accuracy: {round(cv_scores.mean()*100,2)}%")
     print(f"Standard Deviation of Accuracies: {round(cv_scores.std()*100,2)}%")
     return grid_fit
+
+# Cross Validation Function for Neural Network
+
+def NeuralNetwork(x_df, y_df, cv, n):
+    model = MLPClassifier(random_state=100, verbose=True)
+    params = {"hidden_layer_sizes": [(100,), (200,), (300,)],
+              "activation": ['logistic', 'relu'],
+              "solver": ['sgd', 'adam'],
+              "alpha": [1e-4, 1e-12],
+              "learning_rate": ['constant', 'adaptive'],
+              "shuffle": [True, False]
+              }
+    grid_search = GridSearchCV(model, param_distributions=params, cv=cv, n_iter=n)
+    grid_fit = grid_search.fit(x_df, y_df)
+    cv_scores = cross_val_score(model, x_df, y_df, cv=cv)
+    print(cv_scores)
+    print(f"Mean accuracy: {round(cv_scores.mean()*100,2)}%")
+    print(f"Standard Deviation of Accuracies: {round(cv_scores.std()*100,2)}%")
+    return grid_fit
