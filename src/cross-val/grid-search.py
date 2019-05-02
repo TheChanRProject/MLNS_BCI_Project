@@ -17,7 +17,7 @@ def RandomForest(x_df, y_df, cv, n):
               "criterion": ["gini", "entropy"]}
     grid_search = GridSearchCV(model, param_distributions=params, cv=cv, n_iter=n)
     grid_fit = grid_search.fit(x_df, y_df)
-    print(random_fit.cv_results_)
+    print(grid_fit.cv_results_)
     print(f"Best Cross-Validated Accuracy: {round(grid_fit.best_score_*100,2)}%")
     print(f"Best Model Parameters: {grid_fit.best_params_}")
     return grid_fit
