@@ -24,7 +24,7 @@ def RandomForest(x_df, y_df, cv, n):
     random_fit = random_search.fit(x_df, y_df)
     print(random_fit.cv_results_)
     print(f"Best Cross-Validated Accuracy: {round(random_fit.best_score_*100,2)}%")
-    print(f"Best Model Parameters: {best_params_}")
+    print(f"Best Model Parameters: {random_fit.best_params_}")
     return random_fit
 
 # Cross Validation Function for Logistic Regression Non-SGD
@@ -37,7 +37,7 @@ def noSGDLogisticRegression(x_df, y_df, cv, n):
     random_fit = random_search.fit(x_df, y_df)
     print(random_fit.cv_results_)
     print(f"Best Cross-Validated Accuracy: {round(random_fit.best_score_*100,2)}%")
-    print(f"Best Model Parameters: {best_params_}")
+    print(f"Best Model Parameters: {random_fit.best_params_}")
     return random_fit
 
 # Cross Validation Function for Logistic Regression SGD
@@ -54,7 +54,7 @@ def SGDLogisticRegression(x_df, y_df, cv, n):
     random_fit = random_search.fit(x_df, y_df)
     print(random_fit.cv_results_)
     print(f"Best Cross-Validated Accuracy: {round(random_fit.best_score_*100,2)}%")
-    print(f"Best Model Parameters: {best_params_}")
+    print(f"Best Model Parameters: {random_fit.best_params_}")
     return random_fit
 
 # Cross Validation Function for Neural Network
@@ -72,5 +72,5 @@ def NeuralNetwork(x_df, y_df, cv, n):
     random_fit = random_search.fit(x_df, y_df)
     print(random_fit.cv_results_)
     print(f"Best Cross-Validated Accuracy: {round(random_fit.best_score_*100,2)}%")
-    print(f"Best Model Parameters: {best_params_}")
+    print(f"Best Model Parameters: {random_fit.best_params_}")
     return random_fit
