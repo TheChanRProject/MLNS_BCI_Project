@@ -22,10 +22,9 @@ def RandomForest(x_df, y_df, cv, n):
               "criterion": ["gini", "entropy"]}
     random_search = RandomizedSearchCV(model, param_distributions=params, cv=cv, n_iter=n)
     random_fit = random_search.fit(x_df, y_df)
-    cv_scores = cross_val_score(model, x_df, y_df, cv=cv)
-    print(cv_scores)
-    print(f"Mean accuracy: {round(cv_scores.mean()*100,2)}%")
-    print(f"Standard Deviation of Accuracies: {round(cv_scores.std()*100,2)}%")
+    print(random_fit.cv_results_)
+    print(f"Best Cross-Validated Accuracy: {round(random_fit.best_score_()*100,2)}%")
+    print(f"Best Model Parameters: {best_params_}")
     return random_fit
 
 # Cross Validation Function for Logistic Regression Non-SGD
