@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from sklearn.model_selection import RandomizedSearchCV
+from sklearn.model_selection import cross_val_score, RandomizedSearchCV
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression, SGDClassifier
 from sklearn.neural_network import MLPClassifier
@@ -22,4 +22,40 @@ def RandomForest(x_df, y_df, cv, n):
               "criterion": ["gini", "entropy"]}
     random_search = RandomizedSearchCV(model, param_distributions=params, cv=cv, n_iter=n)
     random_fit = random_search.fit(x_df, y_df)
+    cv_scores = cross_val_score(model, x_df, y_df, cv=cv)
+    print(cv_scores)
+    print(f"Mean accuracy: {round(cv_scores.mean()*100,2)}%")
+    print(f"Standard Deviation of Accuracies: {round(cv_scores.std()*100,2)}%")
+    return random_fit
+
+# Cross Validation Function for Logistic Regression Non-SGD
+def noSGDLogisticRegression(x_df, y_df, cv, n):
+    model = LogisticRegression(random_state=100)
+    params = {"penalty": ['l1', 'l2'],
+              "fit_intercept": [False, True],
+              "intercept_scaling": [1, 1.25, 1.5, 1.75, 2]}
+    random_search = RandomizedSearchCV(model, param_distributions=params, cv=cv, n_iter=n)
+    random_fit = random_search.fit(x_df, y_df)
+    cv_scores = cross_val_score(model, x_df, y_df, cv=cv)
+    print(cv_scores)
+    print(f"Mean accuracy: {round(cv_scores.mean()*100,2)}%")
+    print(f"Standard Deviation of Accuracies: {round(cv_scores.std()*100,2)}%")
+    return random_fit
+
+# Cross Validation Function for Logistic Regression SGD
+
+def SGDLogisticRegression(x_df, y_df, cv, n):
+    model = SGDClassifier(loss='log', random_state=100)
+    params = {"penalty": ['l1', 'l2', 'elasticnet'],
+              "l1_ratio": [0.15, 0.25, 0.45, 0.85, 1],
+              "shuffle": [True, False],
+              "learning_rate": ['constant', 'optimal', 'invscaling', 'adaptive'],
+              "eta0": [0.0, 0.15, 0.20, 0.25, 0.75, 0.85],
+              "early_stopping": [True, False]}
+    random_search = RandomizedSearchCV(model, param_distributions=params, cv=cv, n_iter=n)
+    random_fit = random_search.fit(x_df, y_df)
+    cv_scores = cross_val_score(model, x_df, y_df, cv=cv)
+    print(cv_scores)
+    print(f"Mean accuracy: {round(cv_scores.mean()*100,2)}%")
+    print(f"Standard Deviation of Accuracies: {round(cv_scores.std()*100,2)}%")
     return random_fit
