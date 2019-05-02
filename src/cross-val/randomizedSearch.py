@@ -35,10 +35,9 @@ def noSGDLogisticRegression(x_df, y_df, cv, n):
               "intercept_scaling": [1, 1.25, 1.5, 1.75, 2]}
     random_search = RandomizedSearchCV(model, param_distributions=params, cv=cv, n_iter=n)
     random_fit = random_search.fit(x_df, y_df)
-    cv_scores = cross_val_score(model, x_df, y_df, cv=cv)
-    print(cv_scores)
-    print(f"Mean accuracy: {round(cv_scores.mean()*100,2)}%")
-    print(f"Standard Deviation of Accuracies: {round(cv_scores.std()*100,2)}%")
+    print(random_fit.cv_results_)
+    print(f"Best Cross-Validated Accuracy: {round(random_fit.best_score_()*100,2)}%")
+    print(f"Best Model Parameters: {best_params_}")
     return random_fit
 
 # Cross Validation Function for Logistic Regression SGD
@@ -53,10 +52,9 @@ def SGDLogisticRegression(x_df, y_df, cv, n):
               "early_stopping": [True, False]}
     random_search = RandomizedSearchCV(model, param_distributions=params, cv=cv, n_iter=n)
     random_fit = random_search.fit(x_df, y_df)
-    cv_scores = cross_val_score(model, x_df, y_df, cv=cv)
-    print(cv_scores)
-    print(f"Mean accuracy: {round(cv_scores.mean()*100,2)}%")
-    print(f"Standard Deviation of Accuracies: {round(cv_scores.std()*100,2)}%")
+    print(random_fit.cv_results_)
+    print(f"Best Cross-Validated Accuracy: {round(random_fit.best_score_()*100,2)}%")
+    print(f"Best Model Parameters: {best_params_}")
     return random_fit
 
 # Cross Validation Function for Neural Network
@@ -72,8 +70,7 @@ def NeuralNetwork(x_df, y_df, cv, n):
               }
     random_search = RandomizedSearchCV(model, param_distributions=params, cv=cv, n_iter=n)
     random_fit = random_search.fit(x_df, y_df)
-    cv_scores = cross_val_score(model, x_df, y_df, cv=cv)
-    print(cv_scores)
-    print(f"Mean accuracy: {round(cv_scores.mean()*100,2)}%")
-    print(f"Standard Deviation of Accuracies: {round(cv_scores.std()*100,2)}%")
+    print(random_fit.cv_results_)
+    print(f"Best Cross-Validated Accuracy: {round(random_fit.best_score_()*100,2)}%")
+    print(f"Best Model Parameters: {best_params_}")
     return random_fit
