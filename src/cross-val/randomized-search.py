@@ -1,7 +1,6 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from scipy.stats import randint as sp_randint
 from sklearn.model_selection import cross_val_score, train_test_split, RandomizedSearchCV
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression, SGDClassifier
@@ -28,15 +27,18 @@ def RandomForest(x_df, y_df, cv, n_iter):
     class_labels = y_df
     zFeat = scale(features)
     X_train, X_test, Y_train, Y_test = train_test_split(zFeat, class_labels, test_size=0.20, random_state=100)
-    model = RandomForestClassifier(n_estimators=n_estimators, random_state=100)
+    model = RandomForestClassifier(random_state=100)
     cv_results = cross_val_score(model, X_train, Y_train, cv=cv)
-    param_dist = {"n_estimators": [200, 400, 600, 800, 1000],
+    params = {"n_estimators": [200, 400, 600, 800, 1000],
               "max_depth": [3, None],
-              "max_features": sp_randint(1, 11),
-              "min_samples_split": sp_randint(2, 11),
               "bootstrap": [True, False],
               "criterion": ["gini", "entropy"]}
-    random_search = RandomizedSearchCV(model, n_iter=n_iter, cv=cv)
+    random_search = RandomizedSearchCV(model, param_distributions=params, n_iter=n_iter, cv=cv)
     random_fit = random_search.fit(zFeat, class_labels)
     # ROC Curve
-    return random_fit
+    plot_roc(Ytest, random_fit.predict_proba(Xtest), title="CV Random Forest ROC")
+    # Confusion Matrix
+    plot_confusion_matrix(Ytest, random_fit.predict(Xtest), title="CV Random Forest CF")
+    return f"Model accuracy: {round(accuracy_score(Ytest, random_fit.predict(Xtest))*100, 2)}"
+
+pred = RandomForest(neurFeat, classValues, 5, 5)
