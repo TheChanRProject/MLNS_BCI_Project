@@ -15,7 +15,7 @@ def RandomForest(x_df, y_df, cv, n):
     params = {"n_estimators": [400, 1000],
               "bootstrap": [True, False],
               "criterion": ["gini", "entropy"]}
-    grid_search = GridSearchCV(model, param_grid=params, cv=cv, n_iter=n)
+    grid_search = GridSearchCV(model, param_grid=params, cv=cv, n_jobs=n)
     grid_fit = grid_search.fit(x_df, y_df)
     print(grid_fit.cv_results_)
     print(f"Best Cross-Validated Accuracy: {round(grid_fit.best_score_*100,2)}%")
@@ -26,7 +26,7 @@ def RandomForest(x_df, y_df, cv, n):
 def noSGDLogisticRegression(x_df, y_df, cv, n):
     model = LogisticRegression(random_state=100, verbose=True)
     params = {"penalty": ['l1', 'l2']}
-    grid_search = GridSearchCV(model, param_grid=params, cv=cv, n_iter=n)
+    grid_search = GridSearchCV(model, param_grid=params, cv=cv, n_jobs=n)
     grid_fit = grid_search.fit(x_df, y_df)
     print(grid_fit.cv_results_)
     print(f"Best Cross-Validated Accuracy: {round(grid_fit.best_score_*100,2)}%")
@@ -42,7 +42,7 @@ def SGDLogisticRegression(x_df, y_df, cv, n):
               "shuffle": [True, False],
               "learning_rate": ['constant', 'adaptive']
               }
-    grid_search = GridSearchCV(model, param_grid=params, cv=cv, n_iter=n)
+    grid_search = GridSearchCV(model, param_grid=params, cv=cv, n_jobs=n)
     grid_fit = grid_search.fit(x_df, y_df)
     print(grid_fit.cv_results_)
     print(f"Best Cross-Validated Accuracy: {round(grid_fit.best_score_*100,2)}%")
@@ -60,7 +60,7 @@ def NeuralNetwork(x_df, y_df, cv, n):
               "learning_rate": ['constant', 'adaptive'],
               "shuffle": [True, False]
               }
-    grid_search = GridSearchCV(model, param_grid=params, cv=cv, n_iter=n)
+    grid_search = GridSearchCV(model, param_grid=params, cv=cv, n_jobs=n)
     grid_fit = grid_search.fit(x_df, y_df)
     print(grid_fit.cv_results_)
     print(f"Best Cross-Validated Accuracy: {round(grid_fit.best_score_*100,2)}%")
