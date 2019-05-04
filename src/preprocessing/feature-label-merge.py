@@ -59,3 +59,19 @@ VPaak_XFrame['Label'] = VPaak_YFrame['Label']
 VPaak_XYFrame = VPaak_XFrame
 print(len(VPaak_XYFrame.columns))
 VPaak_XYFrame.to_csv("data/DevAttXY/VPaak.csv")
+
+print(devX)
+# VPaap Data Frame 4
+VPaap_XFrame = pd.read_csv(f"data/DevAttX/{devX[3]}")
+VPaap_YFrame = pd.read_csv(f"data/DevAttY/{devY[3]}")
+column_dict = {j:f"Feature_{i+1}" for i,j in enumerate(VPaap_XFrame)}
+print(column_dict)
+Y_map = {j:f"Label" for i,j in enumerate(VPaap_YFrame)}
+VPaap_YFrame.rename(columns=Y_map, inplace=True)
+VPaap_XFrame.rename(columns=column_dict, inplace=True)
+print(VPaap_XFrame.columns)
+print(VPaap_YFrame.columns)
+VPaap_XFrame['Label'] = VPaap_YFrame['Label']
+VPaap_XYFrame = VPaap_XFrame
+print(len(VPaap_XYFrame.columns))
+VPaap_XYFrame.to_csv("data/DevAttXY/VPaap.csv")
