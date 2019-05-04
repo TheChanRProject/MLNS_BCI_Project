@@ -10,3 +10,14 @@ devY = find_csv_filenames('data/DevAttY', suffix=".csv")
 
 print(len(devX))
 print(len(devY))
+
+
+
+print(devX)
+
+VPgeo_XFrame = pd.read_csv(f"data/DevAttX/{devX[0]}")
+VPgeo_YFrame = pd.read_csv(f"data/DevAttY/{devY[0]}")
+column_dict = {j:f"Feature_{i+1}" for i,j in enumerate(VPgeo_XFrame)}
+print(column_dict)
+VPgeo_XFrame.rename(columns=column_dict, inplace=True)
+print(VPgeo_XFrame.columns)
