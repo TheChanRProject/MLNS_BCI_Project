@@ -29,7 +29,7 @@ VPgeo_XYFrame = VPgeo_XFrame
 print(len(VPgeo_XYFrame.columns))
 VPgeo_XYFrame.to_csv("data/DevAttXY/VPgeo.csv")
 
-# VPgeo Data Frame 2
+# VPaan Data Frame 2
 VPaan_XFrame = pd.read_csv(f"data/DevAttX/{devX[1]}")
 VPaan_YFrame = pd.read_csv(f"data/DevAttY/{devY[1]}")
 column_dict = {j:f"Feature_{i+1}" for i,j in enumerate(VPaan_XFrame)}
@@ -43,3 +43,5 @@ VPaan_XFrame['Label'] = VPaan_YFrame['Label']
 VPaan_XYFrame = VPaan_XFrame
 print(len(VPaan_XYFrame.columns))
 VPaan_XYFrame.to_csv("data/DevAttXY/VPaan.csv")
+
+#
