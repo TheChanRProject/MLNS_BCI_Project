@@ -6,3 +6,4 @@ def find_csv_filenames( path_to_dir, suffix=".csv" ):
     return [ filename for filename in filenames if filename.endswith( suffix ) ]
 
 devX = find_csv_filenames('data/DevAttX', suffix=".csv")
+devY = find_csv_filenames('data/DevAttY', suffix=".csv") 
