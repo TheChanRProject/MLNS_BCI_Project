@@ -27,3 +27,4 @@ print(VPgeo_YFrame.columns)
 VPgeo_XFrame['Label'] = VPgeo_YFrame['Label']
 VPgeo_XYFrame = VPgeo_XFrame
 print(len(VPgeo_XYFrame.columns))
+VPgeo_XYFrame.to_csv("data/DevAttXY/VPgeo.csv")
