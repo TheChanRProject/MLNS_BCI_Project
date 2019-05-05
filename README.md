@@ -96,6 +96,8 @@ Tutorials to look at:
 
 - [Sklearn Neural Network API Docs](https://scikit-neuralnetwork.readthedocs.io/en/latest/module_mlp.html)
 
+- [Visualizing Neural Net](https://towardsdatascience.com/visualizing-artificial-neural-networks-anns-with-just-one-line-of-code-b4233607209e)
+
 4. Cross Validation
 
 - [Resources for Grid Search](https://stackabuse.com/cross-validation-and-grid-search-for-model-selection-in-python/)
