@@ -13,6 +13,8 @@
   - Confusion Matrix: ![](../../../images/random-forest/rf_gini_matrix.png)
   - Tree Visualization: ![](../../../images/random-forest/random-forest-estimator-gini.png) 
 
+Best Cross-Validated Accuracy: 99.3%
+Best Model Parameters: {'n_estimators': 800, 'max_depth': None, 'criterion': 'gini', 'bootstrap': True}
 
 ## Results Without Cross Validation
 
