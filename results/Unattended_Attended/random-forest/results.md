@@ -2,6 +2,21 @@
 ## Results Without Cross Validation
 
 - ### Random Forest Model 1: Untuned with 1000 Decision Tree Estimators with Entropy Criterion
+  - Accuracy: 99.17%
+  - ROC Curve: ![](../../../images/random-forest/rf_entropy_ROC)
+  - Confusion Matrix: ![](../../../images/random-forest/rf_entropy_matrix.png)
+  - Tree Visualization: ![](../../../images/random-forest/random-forest-estimator-entropy)     
+
+- ### Random Forest Model 2: Untuned with 1000 Decision Tree Estimators with Gini Index Criterion
+  - Accuracy: 99.19%
+  - ROC Curve: ![](../../../images/random-forest/rf_Gini_ROC)
+  - Confusion Matrix: ![](../../../images/random-forest/rf_gini_matrix.png)
+  - Tree Visualization: ![](../../../images/random-forest/random-forest-estimator-gini) 
+
+
+## Results Without Cross Validation
+
+- ### Random Forest Model 1: Untuned with 1000 Decision Tree Estimators with Entropy Criterion
   - Accuracy: 99.12%
   - ROC Curve: ![](../../../images/random-forest/untuned-rf-roc-curve.png)
   - Confusion Matrix: ![](../../../images/random-forest/untuned-rf-confusion-matrix.png)
