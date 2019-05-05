@@ -13,7 +13,7 @@ File ID for merged_labeled_DevAttentionX.csv in Google Colab: "1-s6kpsj5Gvc86FtI
 
 File ID for merged_labeled_DevAttentionY.csv in Google Colab: "1tHrpcAJjUuerjXrDJ1RGNRCmffPtkW33"
 
-File ID for folder merged_labeled_datav2: "1zPZgSfe5KtkDqYNEVQuhvQ-JtMJR2W_H" 
+File ID for folder merged_labeled_datav2: "1zPZgSfe5KtkDqYNEVQuhvQ-JtMJR2W_H"
 
 [Importing Files from Drive onto Google Colab](https://buomsoo-kim.github.io/python/2018/04/16/Importing-files-from-Google-Drive-in-Google-Colab.md/)
 
@@ -76,6 +76,8 @@ Tutorials to look at:
 - [Will Koehrsen: Random Forest End to End](https://towardsdatascience.com/random-forest-in-python-24d0893d51c0)
 - [Will Koehrsen: Visualizing the Random Forest](https://towardsdatascience.com/how-to-visualize-a-decision-tree-from-a-random-forest-in-python-using-scikit-learn-38ad2d75f21c)
 - If Time Available: [Optimizing of Ensemble Classifiers using Genetic Algorithm](https://pdfs.semanticscholar.org/3ac5/fe864ef84b4b764f600ccf67c980d0e9ac94.pdf)
+
+- [Feature Importance in Random Forests](https://towardsdatascience.com/running-random-forests-inspect-the-feature-importances-with-this-code-2b00dd72b92e)
 
 2. Build a logistic regression (Teresa)
 
