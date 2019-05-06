@@ -53,23 +53,23 @@ Please look at src/ml_experiments/logistic-regression/rishov-logistic-regression
 ## Best Model for Task 1: Random Forest
 
 - Random Forest
-  - [Results](https://github.com/TheChanRProject/MLNS_BCI_Project/blob/master/results/Unattended_Attended/random-forest/results.md)
+  - [Intra-Subject Results](results/Unattended_Attended/Intra-Subject/random-forest/results.md)
+  - [Cross-Subject Results](results/Unattended_Attended/Cross-Subject/random-forest/results.md)
 
 
 - Logistic Regression
-  - [Results](https://github.com/TheChanRProject/MLNS_BCI_Project/blob/master/results/Unattended_Attended/logistic-regression/results.md)
+  - [Intra-Subject Results](results/Unattended_Attended/Intra-Subject/logistic-regression/results.md)
 
 
 - Linear Discriminant Analysis
-  - [Results](https://github.com/TheChanRProject/MLNS_BCI_Project/blob/master/results/Unattended_Attended/lda/results.md)
+  - [Intra-Subject Results](results/Unattended_Attended/Intra-Subject/lda/results.md)
 
 - Neural Network
-  - [Results](https://github.com/TheChanRProject/MLNS_BCI_Project/blob/master/results/Unattended_Attended/neural-network/results.md)
-  - To Do:
-    - Visualize Tuned Neural Network
+  - [Intra-Subject Results](results/Unattended_Attended/Intra-Subject/neural-network/results.md)
+  - [Cross-Subject Results]()
 
 - Naive Bayes
-  - [Results](https://github.com/TheChanRProject/MLNS_BCI_Project/blob/master/results/Unattended_Attended/naive-bayes/results.md)
+  - [Results](results/Unattended_Attended/Intra-Subject/naive-bayes/results.md)
 
 
 ### Part 2: Multi-Class Classification for Unattended versus Attended Including Instruments [Save for Paper]
