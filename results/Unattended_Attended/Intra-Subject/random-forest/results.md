@@ -1,5 +1,6 @@
 # Random Forest Results for First Classification Task
-## Results Without Cross Validation
+
+## Results With Cross Validation [Siena] 
 
 - ### Random Forest Model 1: Untuned with 1000 Decision Tree Estimators with Entropy Criterion
   - Accuracy: 99.17%
@@ -16,7 +17,7 @@
 Best Cross-Validated Accuracy: 99.3%
 Best Model Parameters: {'n_estimators': 800, 'max_depth': None, 'criterion': 'gini', 'bootstrap': True}
 
-## Results With Cross Validation [Siena]
+## Results Without Cross Validation [Rishov]
 
 - ### Random Forest Model 1: Untuned with 1000 Decision Tree Estimators with Entropy Criterion
   - Accuracy: 99.12%
