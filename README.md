@@ -9,11 +9,41 @@ Merged and Labeled DevAttentionX data and Merged DevAttentionY data available on
 
 Please Note: Make sure to drop the first column from the dataframe when reading the csv files otherwise you will get an error when you instantiate your classifier in scikit-learn.
 
+# Intra-Subject File IDs for Google Colab
+
 File ID for merged_labeled_DevAttentionX.csv in Google Colab: "1-s6kpsj5Gvc86FtIrfk_AhlRvVZRi8Mj"
 
 File ID for merged_labeled_DevAttentionY.csv in Google Colab: "1tHrpcAJjUuerjXrDJ1RGNRCmffPtkW33"
 
-File ID for folder merged_labeled_datav2: "1zPZgSfe5KtkDqYNEVQuhvQ-JtMJR2W_H"
+# Cross Subject Code for Google Colab
+
+```
+p1_x = drive.CreateFile({'id':'1RoH6sXOdhaFk-P2BRQKIY9yiLbTevReJ'})
+p1_x.GetContentFile("VPaan_DevAttentionX.csv")
+
+p1_y = drive.CreateFile({'id': '1kfGHc9LHFHbVv2CMX_CqnXECiXshY9Eb'})
+p1_y.GetContentFile("VPaan_DevAttentionY.csv")
+
+p2_x = drive.CreateFile({'id':'1fbaIh9xAcZMO35gVoym6iTnpIJvc1DcF'})
+p2_x.GetContentFile("VPaap_DevAttentionX.csv")
+
+p2_y = drive.CreateFile({'id':"1c7P3RbnyWCkhRUu_bv_SjUiJPdwusXKd"})
+p2_y.GetContentFile("VPaap_DevAttentionY.csv")
+
+p3_x = drive.CreateFile({'id':'1_fZHmXRRtZWZDY_L92GV-_gqWZjyaZyK'})
+p3_x.GetContentFile("VPaas_DevAttentionX.csv")
+
+p3_y = drive.CreateFile({'id':'1R_5qOWIikz8VHN1TJIgl_Cv_Zeh8-Ava'})
+p3_y.GetContentFile("VPaas_DevAttentionY.csv")
+
+p4_x = drive.CreateFile({'id':"1-7L3M541OdGGm1U2QjXXUV9ity1FiEZl"})
+p4_x.GetContentFile("VPgcc_DevAttentionX.csv")
+
+p4_y = drive.CreateFile({'id':'1rsY0_5MtJ9W_9EfLCKhNjSPnvBoIHPC9'})
+p4_y.GetContentFile("VPgcc_DevAttentionY.csv")
+
+```
+
 
 [Importing Files from Drive onto Google Colab](https://buomsoo-kim.github.io/python/2018/04/16/Importing-files-from-Google-Drive-in-Google-Colab.md/)
 
