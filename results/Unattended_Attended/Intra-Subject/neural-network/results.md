@@ -15,3 +15,5 @@
 - ### Neural Network: hidden_layer_sizes: (100,), adam, shuffle=True, learning_rate=adaptive
   - Accuracy: 99.1%
   - Confusion Matrix: ![](../../../../images/neural-network/intrasub-backup-confusion-matrix.png)
+  - ROC Curve: ![](../../../../images/neural-network/intrasub-backup-roc-curve.png)
+  - Visualization: ![](../../../../images/neural-network/neural-network-viz.png)
