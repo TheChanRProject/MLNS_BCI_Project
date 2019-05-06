@@ -20,9 +20,9 @@ Best Model Parameters: {'n_estimators': 800, 'max_depth': None, 'criterion': 'gi
 
 - ### Random Forest Model 1: Untuned with 1000 Decision Tree Estimators with Entropy Criterion
   - Accuracy: 99.12%
-  - ROC Curve: ![](../../../images/random-forest/untuned-rf-roc-curve.png)
-  - Confusion Matrix: ![](../../../images/random-forest/untuned-rf-confusion-matrix.png)
-  - Tree Visualization: ![](../../../images/random-forest/untuned-random-forest-estimator.png)   
+  - ROC Curve: ![](../../../../images/random-forest/untuned-rf-roc-curve.png)
+  - Confusion Matrix: ![](../../../../images/random-forest/untuned-rf-confusion-matrix.png)
+  - Tree Visualization: ![](../../../../images/random-forest/untuned-random-forest-estimator.png)   
 
 - ### Random Forest Model 2: Untuned with 1000 Decision Tree Estimators with Gini Index Criterion
   - Accuracy: 99.12%
@@ -34,4 +34,4 @@ Best Model Parameters: {'n_estimators': 800, 'max_depth': None, 'criterion': 'gi
 
 - ### Random Forest: Tuned with 1000 Trees, Gini Index, Bootstrap = False
   - Accuracy: 99.1%
-  - Confusion Matrix: ![](../../../images/random-forest/intrasub-backup-confusion-matrix.png) 
+  - Confusion Matrix: ![](../../../../images/random-forest/intrasub-backup-confusion-matrix.png) 
