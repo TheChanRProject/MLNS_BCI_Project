@@ -63,7 +63,7 @@ Please look at src/ml_experiments/logistic-regression/rishov-logistic-regression
 
 - Linear Discriminant Analysis
   - [Intra-Subject Results](results/Unattended_Attended/Intra-Subject/lda/results.md)
-
+  - [Cross-Subject Results](results/Unattended_Attended/Intra-Subject/logistic-regression/results.md) 
 - Neural Network
   - [Intra-Subject Results](results/Unattended_Attended/Intra-Subject/neural-network/results.md)
   - [Cross-Subject Results]()
