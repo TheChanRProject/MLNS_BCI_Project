@@ -54,20 +54,20 @@ Please look at src/ml_experiments/logistic-regression/rishov-logistic-regression
 
 - Random Forest
   - [Results](https://github.com/TheChanRProject/MLNS_BCI_Project/blob/master/results/Unattended_Attended/random-forest/results.md)
-  - To Do
-    1. Visualize Best Tree Estimator
-    2. Plot Feature Importance
+
+
 - Logistic Regression
   - [Results](https://github.com/TheChanRProject/MLNS_BCI_Project/blob/master/results/Unattended_Attended/logistic-regression/results.md)
-  - To Do
-    1. Implement Recursive Feature Elimination (RFE)
+
+
 - Linear Discriminant Analysis
   - [Results](https://github.com/TheChanRProject/MLNS_BCI_Project/blob/master/results/Unattended_Attended/lda/results.md)
+
 - Neural Network
   - [Results](https://github.com/TheChanRProject/MLNS_BCI_Project/blob/master/results/Unattended_Attended/neural-network/results.md)
   - To Do:
-    1. Experiment with more deep layers, different activation functions
-    2. Avoid overfitting with dropout, regularization, and SGD learning rate tuning
+    - Visualize Tuned Neural Network 
+
 - Naive Bayes
   - [Results](https://github.com/TheChanRProject/MLNS_BCI_Project/blob/master/results/Unattended_Attended/naive-bayes/results.md)
   - To Do
