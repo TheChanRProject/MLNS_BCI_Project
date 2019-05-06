@@ -66,15 +66,11 @@ Please look at src/ml_experiments/logistic-regression/rishov-logistic-regression
 - Neural Network
   - [Results](https://github.com/TheChanRProject/MLNS_BCI_Project/blob/master/results/Unattended_Attended/neural-network/results.md)
   - To Do:
-    - Visualize Tuned Neural Network 
+    - Visualize Tuned Neural Network
 
 - Naive Bayes
   - [Results](https://github.com/TheChanRProject/MLNS_BCI_Project/blob/master/results/Unattended_Attended/naive-bayes/results.md)
-  - To Do
-    1. Implement Stochastic Gradient Descent (SGD) Classifier with modified-huber loss function
-    2. Use regularization: l1, l2, ElasticNet
-    3. Implement cross validation
-    4. If time available: Ensemble with AdaBoost  
+  
 
 ### Part 2: Multi-Class Classification for Unattended versus Attended Including Instruments
 - Multi-class LDA
